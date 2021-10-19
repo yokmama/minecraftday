@@ -1,0 +1,29 @@
+#
+# Language-File created by:		Gecolay
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a Plugin byl uspesne spusten."
+  plugin-update: "[P]&a Tento plugin má novou verzi:&6 %NewVersion%&a!\n[P]&a Používáte zastaralou verzi:&6 %Version%&a!\n[P]&a Stáhněte si nejnovější verzi:&6 %Path%"
+  plugin-stop: "[P]&a Plugin se uspesne vypnul."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a Konfigurace byla uspesne nactena."
+  command-permission-error: "[P]&c Nemáš oprávnění provést tento Příkaz"
+  command-consol-error: "[P]&c Tento příkaz je určen pouze pro hráče!"
+  command-gsit-waterlogged-error: "[P]&c Nemůžete sedět v podmáčených blocích!"
+  command-gsit-blocked-error: "[P]&c Nemůžeš tady sedět!"
+  command-gsit-already-sit-error: "[P]&c Už sedíte!"
+  command-gsit-in-block-error: "[P]&c Nemůžete sedět v bloku!"
+  command-gsit-world-error: "[P]&c Na tomto světě nemůžete sedět!"
+  command-gsit-on-ground-error: "[P]&c Nemůžeš tady sedět!"
+  command-gsit-toggle-off: "[P]&a Nyní si můžete znovu sednout kliknutím."
+  command-gsit-toggle-on: "[P]&a Kliknutím si již nemůžete sednout."
+  command-gsit-stand-up: "&aPomocí Sneak-Key se postavte."

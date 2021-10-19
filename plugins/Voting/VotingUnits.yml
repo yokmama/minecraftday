@@ -1,0 +1,116 @@
+DAY:
+  Name: Day
+  Type: GLOBAL
+  Category: WEATHER
+  ImmediateInitiatorVote:
+    Active: true
+  Price:
+    Start: 0
+    Vote: 0
+  Restriction:
+    World: [ ]
+  Result:
+    Time: 0
+NIGHT:
+  Name: Night
+  Type: GLOBAL
+  Category: WEATHER
+  ImmediateInitiatorVote:
+    Active: true
+  Price:
+    Start: 0
+    Vote: 0
+  Restriction:
+    World: [ ]
+  Result:
+    Time: 13000
+SUN:
+  Name: Sun
+  Type: GLOBAL
+  Category: WEATHER
+  ImmediateInitiatorVote:
+    Active: true
+  Price:
+    Start: 0
+    Vote: 0
+  Restriction:
+    World: [ ]
+  Result:
+    Rain: false
+    Lighting: false
+    Duration: 12000
+RAIN:
+  Name: Rain
+  Type: GLOBAL
+  Category: WEATHER
+  ImmediateInitiatorVote:
+    Active: true
+  Price:
+    Start: 0
+    Vote: 0
+  Restriction:
+    World: [ ]
+  Result:
+    Rain: true
+    Lighting: false
+    Duration: 12000
+STORM:
+  Name: Storm
+  Type: GLOBAL
+  Category: WEATHER
+  ImmediateInitiatorVote:
+    Active: true
+  Price:
+    Start: 0
+    Vote: 0
+  Restriction:
+    World: [ ]
+  Result:
+    Rain: true
+    Lighting: true
+    Duration: 12000
+KICK:
+  Name: Kick
+  Type: GLOBAL
+  Category: CUSTOM
+  ImmediateInitiatorVote:
+    Active: true
+  Price:
+    Start: 0
+    Vote: 0
+  Restriction:
+    World: [ ]
+  Parameter:
+    Target:
+      Name: player
+      Type: PLAYER
+      Resistance:
+        Initiator:
+          Active: true
+        Collection:
+          - "player_name"
+    Reson:
+      Name: reason
+      Type: PAYLOAD
+      Optionality: true
+      DefaultValue: "Unknown"
+  Result:
+    Command:
+      Global:
+        - "kick {p_player} {p_reason}"
+EVENT:
+  Name: Event
+  Type: GLOBAL
+  Category: CUSTOM
+  ImmediateInitiatorVote:
+    Active: false
+  Price:
+    Start: 0
+    Vote: 0
+  Restriction:
+    World: [ ]
+  Parameter:
+    Target:
+      Name: question
+      Type: PAYLOAD
+

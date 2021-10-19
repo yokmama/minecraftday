@@ -1,0 +1,29 @@
+#
+# Language-File created by:		Vladislav_Kotiv
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a Плагін було успішно ввімкнено."
+  plugin-update: "[P]&a Цей плагін має нову версію:&6 %NewVersion%&a!\n[P]&a Ви використовуєте застарілу версію:&6 %Version%&a!\n[P]&a Завантажте найновішу версію:&6 %Path%"
+  plugin-stop: "[P]&a Плагін було успішно вимкнено."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a Налаштування було успішно перезавантажено."
+  command-permission-error: "[P]&c Ви маєте недостатньо прав для використання цієї команди!"
+  command-consol-error: "[P]&c Ця команда лише для гравців!"
+  command-gsit-waterlogged-error: "[P]&c Ви не можете сісти на заповнені водою блоки!"
+  command-gsit-blocked-error: "[P]&c Ви не можете сісти тут!"
+  command-gsit-already-sit-error: "[P]&c Ви вже сидите!"
+  command-gsit-in-block-error: "[P]&c Ви не можете сісти на блок!"
+  command-gsit-world-error: "[P]&c Ви не можете сісти в цьому світі!"
+  command-gsit-on-ground-error: "[P]&c Ви не можете сісти тут!"
+  command-gsit-toggle-off: "[P]&a Тепер ви можете сісти тут знову за допомогою кліку."
+  command-gsit-toggle-on: "[P]&a Тепер ви не можете сісти тут знову за допомогою кліку."
+  command-gsit-stand-up: "&aВикористовуйте клавішу Підкрадатися щоб встати."

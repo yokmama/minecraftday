@@ -1,0 +1,50 @@
+GUI:
+  Base:
+    VotingUnitGUI:
+      Item:
+        Unit:
+          DAY:
+            Material: CLOCK
+            MaterialData: 0
+            Slot: 0
+          NIGHT:
+            Material: BLUE_BED
+            MaterialData: 0
+            Slot: 2
+          SUN:
+            Material: SUNFLOWER
+            MaterialData: 0
+            Slot: 4
+          RAIN:
+            Material: LILY_PAD
+            MaterialData: 0
+            Slot: 6
+          STORM:
+            Material: BLAZE_POWDER
+            MaterialData: 0
+            Slot: 8
+    VotingVoteGUI:
+      Item:
+        Button:
+          Agree:
+            Material: GREEN_CONCRETE
+            MaterialData: 0
+            Slot: 5
+          Disagree:
+            Material: RED_CONCRETE
+            MaterialData: 0
+            Slot: 7
+        Base:
+          Delimiter:
+            Material: BLACK_STAINED_GLASS_PANE
+            MaterialData: 0
+            Slot: 3
+          Lock:
+            Material: BLACK_STAINED_GLASS_PANE
+            MaterialData: 0
+            Slot: 6
+          Info:
+            Material: GLOWSTONE_DUST
+            MaterialData: 0
+            Slot: 1
+VERSION: 3.1.0

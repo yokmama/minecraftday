@@ -1,0 +1,29 @@
+#
+# Language-File created by:		Thihi
+#
+  
+  
+  
+Plugin:
+
+  plugin-start: "[P]&a Käyttöönotto onnistui."
+  plugin-update: "[P]&a Tällä laajennuksella on uusi versio:&6 %NewVersion%&a!\n[P]&a Käytät vanhentunutta versiota:&6 %Version%&a!\n[P]&a Lataa uusin versio:&6 %Path%"
+  plugin-stop: "[P]&a Poistettu käytöstä."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a Asetukset ladattiin uudelleen."
+  command-permission-error: "[P]&c Lupa puuttuu!"
+  command-consol-error: "[P]&c Tämä komento on tarkoitettu vain pelaajille!"
+  command-gsit-waterlogged-error: "[P]&c Et voi istua vesimäräisissä lohkoissa!"
+  command-gsit-blocked-error: "[P]&c Et voi istua täällä!"
+  command-gsit-already-sit-error: "[P]&c Istut jo!"
+  command-gsit-in-block-error: "[P]&c Et voi istua lohkossa!"
+  command-gsit-world-error: "[P]&c Et voi istua tässä maailmassa"
+  command-gsit-on-ground-error: "[P]&c Et voi istua täällä!"
+  command-gsit-toggle-off: "[P]&a Voit nyt istua uudelleen napsauttamalla."
+  command-gsit-toggle-on: "[P]&a Et voi enää istua napsauttamalla."
+  command-gsit-stand-up: "&aKäytä Sneak-avainta seisomaanksesi."

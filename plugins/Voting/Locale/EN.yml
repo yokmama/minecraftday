@@ -1,0 +1,265 @@
+Prefix: '&9&lVoting &e❱'
+Errors:
+  ConsoleError: '&cCommand can be performed only via Player!'
+  NoPermissions: '&cYou are not permitted to use this action!'
+  WrongCommandUsage:
+    Unsupported: |-
+      &cWrong usage of command!
+      &e● &7Unsupported command sequence
+    Hint:
+      Common: |-
+        &cWrong usage of command!
+        &e● &7&lHINT &e» &b{replacement}
+      Tab: |-
+        &cWrong usage of command!
+        &e● &7&lHINT &e» &b{replacement}
+        &e● &7&lHINT &e» &dUse Tab to complete command sequence
+  Round:
+    NotRunning: '&cCurrently, no voting round is running!'
+    Running: '&cThere is not able to start next round, while another is running!'
+    Vote: '&cYou have already placed a vote at this round!'
+    Economy:
+      Start: |-
+        &cBalance of your account does not let you to start voting!
+        &e● &7You need &b${amount} &7to start a round.
+      Vote: |-
+        &cBalance of your account does not let you to vote at this round!
+        &e● &7You need &b${amount} &7to place a vote.
+    Restriction:
+      Start: '&cYou are standing in world, where is not allowed to start a voting
+        round!'
+      Vote: '&cYou are standing in world, where is not allowed to place a vote!'
+    Pause:
+      Global: |-
+        &cThere is not able to start next round, while pause is running!
+        &e● &7Please wait &e» &b{remains}s
+      Personal: |-
+        &cYou are not allowed to start next round!
+        &e● &7Please wait until &e» &b{available_at}
+    MinPlayers: |-
+      &cNot enough players to start next round!
+      &e● &7Please wait unit &b{player_count_min} &7players will be online.
+  Parameter:
+    Player: '&cPlayer &b{player} &cwas not found on this server!'
+    World: '&cWorld &b{world} &cwas not found!'
+    Resistance:
+      Initiator: '&cYou, as an initiator of the round, cannot be used as a parameter!'
+      Collection: '&cValue &b{resistance_value} &ccannot be used as a parameter!'
+  Administration:
+    Alias:
+      Save: '&cAn error at saving localization file occurred!'
+    Reload:
+      Options: '&cA critical error occurred! Check options file! Disabling plugin...'
+  Sign:
+    Unit:
+      NotFound: '&cUnit &b{unit} &cwas not found at system!'
+      Parameter: |-
+        &cUnit &b{unit} &crequires additional parameters to start a round!
+        &e● &7There is not able to create sign for this unit.
+    Vote:
+      NotFound: |-
+        &cValue of Vote &b{vote} &cwas not found at system!
+        &e● &7Allowed values &e» &bYes/No/Agree/Disagree
+  GUI:
+    Pause: |-
+      &cThere is not able to open GUI, while pause is running!
+      &e● &7Please wait &e» &b{remains}s
+    Error: |-
+      &cAn unexpected error at opening GUI has occurred!
+      &e● &7Please contact staff.
+Success:
+  Round:
+    Vote: '&7You have successfully placed a vote!'
+    Start:
+      Initiator: |-
+        &7Round has started!
+        &e● &7Please wait until evaluation.
+      Weather: '&b{initiator} &7would want &b{state} &7in world &b{world}&7!'
+      Custom:
+        KICK: '&b{initiator} &7wants to kick &b{p_player} &7for reason &b{p_reason}'
+        EVENT: '&b{initiator} &7placed a question &e» &7''&b{p_question}&7'''
+    Join:
+      Weather: '&7Round for &b{state} &7in world &b{world} &7in progress!'
+      Custom:
+        KICK: '&7Round for kicking &b{p_player} &7for reason &b{p_reason} &7in progress!'
+        EVENT: '&7There is placed a question &e» &7''&b{p_question}&7'''
+    Result:
+      Success:
+        Weather: '&aSuccessful &7Round for &b{state} &7in world &b{world}&7!'
+        Custom:
+          KICK: |-
+            &aSuccessful &7Round for kicking player &b{p_player}&7!
+            &e● &7Kicking out...
+          EVENT: '&aSuccessful &7Round for question &e» &7''&b{p_question}&7'''
+      Fail:
+        Weather: '&cUnsuccessful &7Round for &b{state} &7in world &b{world}&7!'
+        Custom:
+          KICK: '&cUnsuccessful &7Round for kick player &b{p_player}&7!'
+          EVENT: '&cUnsuccessful &7Round for question &e» &7''&b{p_question}&7'''
+      Ratio: '&7Result ratio &e» &a&l{agree} &7: &c&l{disagree}'
+  Sign:
+    Create: '&7Sign created!'
+    Destroy: '&7Sign destroyed!'
+  Administration:
+    Alias: '&7World &b{world} &7has new alias &b{alias}&7!'
+    Reload:
+      All: '&7Whole plugin successfully reloaded!'
+      Locale: '&7Localization and it''s dependencies successfully reloaded!'
+      Options: '&7Options and it''s dependencies successfully reloaded!'
+      Units: '&7Units and it''s dependencies successfully reloaded!'
+    Help:
+      Player:
+      - '&9&lVoting &e❱ &7Basic commands'
+      - '&e● &7Info &e» &b/Voting Info'
+      - '&e● &7GUI &e» &b/Voting'
+      - '&e● &7Start a round &e» &b/Voting <Unit>'
+      - '   &3● &c&lHINT &e» &7Use &eTab &7to complete command sequence'
+      - '&e● &7Place a vote &e» &b/Voting <Agree/Disagree>'
+      Admin:
+      - '&9&lVoting &e❱ &7Admin commands'
+      - '&e● &7Admin Info &e» &b/VotingAdmin Info Admin'
+      - '&e● &7Set world''s alias &e» &b/VotingAdmin Alias <World> <Alias>'
+      - '&e● &7Reload &e» &b/VotingAdmin Reload <[All]/Locale/Options/Units>'
+BossBar:
+  Category:
+    Weather: '&7&lPlace vote for &e&l{state} &7&lin world &e&l{world}&7&l! &8&l| &7&lEnds
+      in &3&l» &e&l{time}s'
+    Custom:
+      KICK: '&7&lPlace vote to kick &e&l{p_player}&7&l! &8&l| &7&lEnds in &3&l» &e&l{time}s'
+      EVENT: '&7''&e&l{p_question}&7'' &8&l| &7&lEnds in &3&l» &e&l{time}s'
+Clickable:
+  PlaceVote:
+    Agree:
+      Click:
+        Prefix: '&e●'
+        Message: '&a&nYes&7, I agree with this statement!'
+      Hover:
+        Message: '&7Click, to place a vote!'
+    Disagree:
+      Click:
+        Prefix: '&e●'
+        Message: '&c&nNo&7, I disagree with this statement!'
+      Hover:
+        Message: '&7Click, to place a vote!'
+Alias:
+  World:
+    world: Survival
+  Unit:
+    Weather:
+      DAY: Day
+      NIGHT: Night
+      SUN: Sun
+      RAIN: Rain
+      STORM: Storm
+  InitiatorType:
+    CONSOLE: Administrator
+  Vote:
+    AGREE: Agree
+    DISAGREE: Disagree
+Sign:
+  ROUND:
+    SLEEPING:
+      '1': '&9&lVoting'
+      '2': '&0&l{unit_base}'
+      '3': ''
+      '4': '&2Click to start!'
+    RUNNING:
+      '1': '&9&lVoting'
+      '2': '&0&l{unit_running}'
+      '3': '&4&lRunning'
+      '4': '&2&lEnds in &9» &4&l{time}s'
+    PAUSING:
+      '1': '&9&lVoting'
+      '2': ''
+      '3': '&4&lPause'
+      '4': '&2&lWait &9» &4&l{time}s'
+  VOTE:
+    SLEEPING:
+      '1': '&9&lVote'
+      '2': '&0&l{vote}'
+      '3': ''
+      '4': ''
+    RUNNING:
+      '1': '&9&lVote'
+      '2': '&0&l{vote}'
+      '3': '&4For &9» &0&l{unit_running}'
+      '4': '&2Place a vote!'
+    PAUSING:
+      '1': '&9&lVote'
+      '2': '&0&l{vote}'
+      '3': ''
+      '4': ''
+GUI:
+  Base:
+    VotingUnitGUI:
+      InventoryName: '&9&lVoting'
+      Item:
+        Unit:
+          DAY:
+            HeadName: '&3&lDay time'
+            Lore:
+            - '&6● &7Click to start round!'
+          NIGHT:
+            HeadName: '&2&lNight time'
+            Lore:
+            - '&6● &7Click to start round!'
+          SUN:
+            HeadName: '&e&lSunny weather'
+            Lore:
+            - '&6● &7Click to start round!'
+          RAIN:
+            HeadName: '&9&lRainy weather'
+            Lore:
+            - '&6● &7Click to start round!'
+          STORM:
+            HeadName: '&7&lStormy weather'
+            Lore:
+            - '&6● &7Click to start round!'
+    VotingVoteGUI:
+      InventoryName: '&9&lVoting - Round'
+      Item:
+        Button:
+          Agree:
+            HeadName: '&a&lAgree'
+            Lore:
+            - '&6● &a&lYes&7, I agree with this statement!'
+            - ''
+            - '&6● &7Click, to place a vote!'
+          Disagree:
+            HeadName: '&c&lDisagree'
+            Lore:
+            - '&6● &c&lNo&7, I disagree with this statement!'
+            - ''
+            - '&6● &7Click, to place a vote!'
+        Base:
+          Delimiter:
+            HeadName: ' '
+            Lore: []
+          Lock:
+            HeadName: '&c&lLock'
+            Lore:
+            - '&6● &7Vote has been already placed!'
+          Info:
+            Category:
+              Weather:
+                HeadName: '&2&lRound information'
+                Lore:
+                - '&6● &7For &6» &3{state}'
+                - '&6● &7World &6» &3{world}'
+                - ''
+                - '&6● &7Remains &6» &3{time}s'
+              Custom:
+                KICK:
+                  HeadName: '&2&lRound information'
+                  Lore:
+                  - '&6● &7Kick &6» &3{p_player}'
+                  - '&6● &7Reason &6» &3{p_reason}'
+                  - ''
+                  - '&6● &7Remains &6» &3{time}s'
+                EVENT:
+                  HeadName: '&2&lRound information'
+                  Lore:
+                  - '&6● &7Question &6» &3{p_question}'
+                  - ''
+                  - '&6● &7Remains &6» &3{time}s'
+VERSION: 3.1.0

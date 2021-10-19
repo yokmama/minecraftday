@@ -1,0 +1,1322 @@
+# This file is not intended to be manually modified! If you want to manually edit this file anyways, ensure that the server is not running currently and that you have prepared a backup of this file.
+data-version: 2|2730
+'32':
+  uniqueId: cb00a312-9cfc-49e6-bafc-e3d0bfaaf3c8
+  name: ''
+  world: seikatu
+  x: -173
+  y: 66
+  z: -31
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: MASON
+    villagerType: TAIGA
+    villagerLevel: 1
+  recipes: {}
+'33':
+  uniqueId: 0cdde3b5-377a-4c2e-a705-76aaceb73ee4
+  name: ''
+  world: seikatu
+  x: -192
+  y: 66
+  z: -7
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: TAIGA
+    villagerLevel: 1
+  recipes: {}
+'39':
+  uniqueId: 20a6b5fa-d426-44ef-84e6-b325214b9f5e
+  name: ''
+  world: seikatu
+  x: 220
+  y: 63
+  z: 1
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: PLAINS
+    villagerLevel: 1
+  recipes: {}
+'61':
+  uniqueId: 42345147-b88b-402c-802f-d49637d2e49f
+  name: ''
+  world: seikatu
+  x: -174
+  y: 65
+  z: 34
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: CLERIC
+    villagerType: TAIGA
+    villagerLevel: 5
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 5
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:healing
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 10
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_healing
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 15
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: NETHER_WART
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:night_vision
+    '4':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 15
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: NETHER_WART
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:leaping
+    '5':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 15
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: NETHER_WART
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:fire_resistance
+    '6':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 15
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: NETHER_WART
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:swiftness
+    '7':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 15
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: NETHER_WART
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:water_breathing
+'67':
+  uniqueId: 120bde62-4318-44b4-8e5c-a7035a7e71be
+  name: ''
+  world: seikatu
+  x: -138
+  y: 66
+  z: 2
+  type: admin
+  object:
+    type: wandering-trader
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: GOLD_INGOT
+        amount: 10
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: DRAGON_BREATH
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: GOLD_INGOT
+        amount: 20
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: DRAGON_BREATH
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"光るドラゴンブレス","color":"yellow","italic":false}'
+          lore:
+          - '{"text":"ただ光るだけで特殊能力とかも何もない。","color":"white","italic":false}'
+          enchants:
+            LOOT_BONUS_BLOCKS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: GOLD_BLOCK
+        amount: 30
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: DRAGON_HEAD
+'76':
+  uniqueId: e7a655ed-7551-434f-8269-2d303fd30376
+  name: ''
+  world: seikatu
+  x: -121
+  y: 64
+  z: 4
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: TAIGA
+    villagerLevel: 1
+  recipes: {}
+'86':
+  uniqueId: 24d1e7ba-1b9e-4581-987b-7317b7ee4eed
+  name: ''
+  world: seikatu
+  x: -101
+  y: 64
+  z: 4
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: BUTCHER
+    villagerType: SAVANNA
+    villagerLevel: 1
+  recipes: {}
+'87':
+  uniqueId: ce69afa4-7e53-4f5f-863e-f21ede2365e1
+  name: ''
+  world: seikatu
+  x: -66
+  y: 69
+  z: -30
+  type: admin
+  object:
+    type: wandering-trader
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: GOLDEN_HELMET
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: PRISMARINE_CRYSTALS
+        amount: 10
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: PLAYER_HEAD
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          display-name: '{"text":"ダイビングヘルメット","color":"aqua","italic":false}'
+          lore:
+          - '{"text":" "}'
+          - '{"text":"頭に装備したとき:","color":"gray","italic":false}'
+          - '{"text":"防具 +1","color":"blue","italic":false}'
+          enchants:
+            OXYGEN: 5
+          attribute-modifiers:
+            GENERIC_ARMOR:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 1.0
+              name: generic.armor
+              slot: HEAD
+              uuid: 0fd4cf57-1f0d-4e7a-8876-8a4f0770e439
+              operation: 0
+          ItemFlags:
+          - HIDE_ATTRIBUTES
+          internal: H4sIAAAAAAAA/02PsVKDQBRFn47ORLSy9ScgCTgpTYzJYh4IQRa2S2AjbJaYIeC41I6d4x/Y2+k/WPlTip3dvfec5moAGpzM17WUN+X9KpdcA61NW15WOd8dQafij1Vd8p0GAHsdOAwXsubwwZWtsyjT08iWiSJW24O5Ll0itudkE6rliFikaPn0wpqpwT/XrBbUlHHPztjGq5dFqM96vuRT30iK2wcMkj42Q4HU66O40x2KJlLSbp5yaWyyCRpukDR/nnM5NrDJJAb+2pmwnFGvi/RKIh03sRjKWKQi7nr5KjIGAMewT9L2xAH7/D4b0evX99Pnt6+fpxeAX64QR7kGAQAA
+'90':
+  uniqueId: 62e3a3a5-e7fc-4f78-8864-244491b1057c
+  name: ''
+  world: seikatu
+  x: -192
+  y: 65
+  z: -56
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: CARTOGRAPHER
+    villagerType: PLAINS
+    villagerLevel: 1
+  recipes: {}
+'92':
+  uniqueId: b26091bc-a127-4506-bfdd-44ae5bf2ecd6
+  name: ''
+  world: seikatu
+  x: -112
+  y: 64
+  z: 39
+  type: admin
+  object:
+    type: piglin
+    baby: false
+  recipes: {}
+'93':
+  uniqueId: 5fe3b8b9-bb6b-455d-ae6a-05086b0831ec
+  name: ''
+  world: seikatu
+  x: -96
+  y: 104
+  z: 42
+  type: admin
+  object:
+    type: wandering-trader
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 10
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: GRASS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          display-name: '{"text":"怪しいポーション","color":"white","italic":false}'
+          lore:
+          - '{"text":"めちゃくちゃ怪しい。","color":"gray","italic":false}'
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          - HIDE_DYE
+          custom-color:
+            ==: Color
+            RED: 170
+            BLUE: 255
+            GREEN: 0
+          custom-effects:
+          - ==: PotionEffect
+            effect: 2
+            duration: 3600
+            amplifier: 0
+            ambient: false
+            has-particles: true
+            has-icon: true
+          - ==: PotionEffect
+            effect: 4
+            duration: 3600
+            amplifier: 0
+            ambient: false
+            has-particles: true
+            has-icon: true
+          - ==: PotionEffect
+            effect: 9
+            duration: 3600
+            amplifier: 0
+            ambient: false
+            has-particles: true
+            has-icon: true
+          - ==: PotionEffect
+            effect: 17
+            duration: 3600
+            amplifier: 0
+            ambient: false
+            has-particles: true
+            has-icon: true
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 10
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: WHITE_WOOL
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"鉄ブロック","color":"white","italic":false}'
+          lore:
+          - '{"text":"すごく怪しい。","color":"gray","italic":false}'
+          - '{"text":"鉄ブロックがこんなもふもふしてるはずがない。","color":"gray","italic":false}'
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 10
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: YELLOW_WOOL
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金ブロック","color":"white","italic":false}'
+          lore:
+          - '{"text":"さらに怪しい。","color":"gray","italic":false}'
+          - '{"text":"これ絶対黄色の羊m...","color":"gray","italic":false}'
+    '4':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 10
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: GOLDEN_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"エクスカリバー","color":"white","italic":false}'
+          lore:
+          - '{"text":"これまでにないほど怪しい。","color":"gray","italic":false}'
+          attribute-modifiers:
+            GENERIC_ATTACK_DAMAGE:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: -100.0
+              name: generic.attack_damage
+              slot: HAND
+              uuid: 5b8565df-ece3-48f1-8a7f-316790676557
+              operation: 0
+          ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          - HIDE_PLACED_ON
+          - HIDE_POTION_EFFECTS
+          - HIDE_DYE
+    '5':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 10
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: NETHER_BRICK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"ネザライトインゴット","color":"white","italic":false}'
+          lore:
+          - '{"text":"普通に怪しい。","color":"gray","italic":false}'
+          - '{"text":"そもそも色とかネザーレn...","color":"gray","italic":false}'
+    '6':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: EMERALD
+        amount: 10
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: QUARTZ
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"ネザースター","color":"yellow","italic":false}'
+          lore:
+          - '{"text":"これは無理がある。","color":"gray","italic":false}'
+          enchants:
+            VANISHING_CURSE: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+'109':
+  uniqueId: 52186d14-89b2-425d-9fcb-242743264570
+  name: ''
+  world: seikatu
+  x: -109
+  y: 63
+  z: -8
+  type: admin
+  object:
+    type: parrot
+    sitting: true
+    parrotVariant: GRAY
+  recipes: {}
+'113':
+  uniqueId: b7d47e21-ce0f-4827-a1a9-6c8f1e70bdec
+  name: ''
+  world: seikatu
+  x: -107
+  y: 64
+  z: -9
+  type: admin
+  object:
+    type: parrot
+    sitting: false
+    parrotVariant: RED
+  recipes: {}
+'114':
+  uniqueId: af8d30e0-5420-4718-88e1-6d2efaf78f83
+  name: ''
+  world: seikatu
+  x: -106
+  y: 63
+  z: -8
+  type: admin
+  object:
+    type: parrot
+    sitting: true
+    parrotVariant: CYAN
+  recipes: {}
+'115':
+  uniqueId: b778290c-d25a-43c4-8d2a-13ad85097374
+  name: ''
+  world: seikatu
+  x: -156
+  y: 65
+  z: 39
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: TAIGA
+    villagerLevel: 1
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: PAPER
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"換金券","color":"aqua","italic":false}'
+          lore:
+          - '{"text":"---------------------------------","color":"dark_gray","italic":false}'
+          - '{"text":"生活ワールドのリスポーン地点周辺にある","color":"white","italic":false}'
+          - '[{"text":"換金・引換所で","color":"white","italic":false},{"text":"10000円","color":"yellow"},{"text":"と交換できるチケット。","color":"white"}]'
+          enchants:
+            LOOT_BONUS_BLOCKS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: DIAMOND
+        amount: 8
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: NETHERITE_INGOT
+    '4':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: MUSIC_DISC_PIGSTEP
+    '5':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: ELYTRA
+    '6':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: DRAGON_HEAD
+'116':
+  uniqueId: 5461c817-d07d-449d-b551-2dee2787aee6
+  name: ''
+  world: seikatu
+  x: -156
+  y: 65
+  z: 38
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: TAIGA
+    villagerLevel: 1
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銀のサーモン","color":"#9EACB4","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるレアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: PAPER
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"換金券","color":"aqua","italic":false}'
+          lore:
+          - '{"text":"---------------------------------","color":"dark_gray","italic":false}'
+          - '{"text":"生活ワールドのリスポーン地点周辺にある","color":"white","italic":false}'
+          - '[{"text":"換金・引換所で","color":"white","italic":false},{"text":"5000円","color":"yellow"},{"text":"と交換できるチケット。","color":"white"}]'
+          enchants:
+            LOOT_BONUS_BLOCKS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銀のサーモン","color":"#9EACB4","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるレアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: GOLD_INGOT
+        amount: 16
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銀のサーモン","color":"#9EACB4","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるレアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: WITHER_SKELETON_SKULL
+        amount: 3
+    '4':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銀のサーモン","color":"#9EACB4","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるレアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: NETHER_STAR
+    '5':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銀のサーモン","color":"#9EACB4","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるレアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: NAME_TAG
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"ニックネーム設定券","color":"yellow","italic":false}'
+          lore:
+          - '{"text":"運営に渡すと自分のニックネームを","color":"white","italic":false}'
+          - '{"text":"設定してもらえる券。","color":"white","italic":false}'
+          enchants:
+            DURABILITY: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+'117':
+  uniqueId: fa23f83e-4be9-4fd7-b8f6-77194024f1df
+  name: ''
+  world: seikatu
+  x: -156
+  y: 65
+  z: 37
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: TAIGA
+    villagerLevel: 1
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銅のサーモン","color":"#C47022","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: PAPER
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"換金券","color":"aqua","italic":false}'
+          lore:
+          - '{"text":"---------------------------------","color":"dark_gray","italic":false}'
+          - '{"text":"生活ワールドのリスポーン地点周辺にある","color":"white","italic":false}'
+          - '[{"text":"換金・引換所で","color":"white","italic":false},{"text":"1000円","color":"yellow"},{"text":"と交換できるチケット。","color":"white"}]'
+          enchants:
+            LOOT_BONUS_BLOCKS: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銅のサーモン","color":"#C47022","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: IRON_INGOT
+        amount: 32
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銅のサーモン","color":"#C47022","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: TRIDENT
+    '4':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銅のサーモン","color":"#C47022","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: PLAYER_HEAD
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          display-name: '{"text":"プレイヤーヘッド交換券","color":"yellow","italic":false}'
+          lore:
+          - '{"text":"運営に渡すと自分のプレイヤーヘッドと","color":"white","italic":false}'
+          - '{"text":"交換してもらえる券。","color":"white","italic":false}'
+          internal: H4sIAAAAAAAA/02PTU7DMBhEPxBIbWDJATiCQ2lQFywiCNRRnUDz6+zaxk3j2qVKE0gsbsAF2HEFFtwGcRIkwEt28zRPI40BYMBxsG6EuKselqVgBhg6bVlVl2zXh17N2rqp2M4AgL0eHMYz0TD4YJ2LsnSF8tQViw5bmsMACR/z7QXexN38CltY6n5sW5Nu9M8d1rNkKOjAXWWb+2YuYzQZTAUbT82FjB5JaCsvISbhxRNRWUlUgaiKFFWC+7dOS0On80J67iVR60lXUk7O/IS0fphz7Uhy7a0z6SjKC72DW5o4phe4o2WKLgGOYB/n+sjBq/X89vVzc/r+/WKffP72Af4AA6ieowoBAAA=
+'118':
+  uniqueId: 23351e27-958a-4b69-9447-00658c9c5537
+  name: ''
+  world: seikatu
+  x: -158
+  y: 65
+  z: 36
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: CARTOGRAPHER
+    villagerType: TAIGA
+    villagerLevel: 1
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        amount: 3
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銅のサーモン","color":"#C47022","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銀のサーモン","color":"#9EACB4","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるレアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        amount: 3
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銀のサーモン","color":"#9EACB4","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるレアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        amount: 3
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: COOKED_SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"プラチナのサーモン","color":"#F0F8FF","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される超激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '4':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: COOKED_SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"プラチナのサーモン","color":"#F0F8FF","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される超激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        amount: 3
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '5':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"金のサーモン","color":"#E3AB00","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与される激レアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        amount: 3
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銀のサーモン","color":"#9EACB4","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるレアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '6':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銀のサーモン","color":"#9EACB4","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるレアアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: SALMON
+        amount: 3
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"text":"銅のサーモン","color":"#C47022","italic":false}'
+          lore:
+          - '{"text":"鳩の独断で賞与されるアイテム。","color":"gray","italic":false}'
+          - '{"text":"初期スポーンで限定アイテムと交換できます。","color":"gray","italic":false}'
+          - '{"text":" "}'
+          - '{"text":"サーモン返礼品","color":"yellow","italic":false}'
+          enchants:
+            SOUL_SPEED: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+'123':
+  uniqueId: 9d67f95b-9203-46d3-b8ca-00baa2a4eeec
+  name: MrBenzene
+  world: '211017'
+  x: -73
+  y: 66
+  z: -244
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: SAVANNA
+    villagerLevel: 2
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: STONE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '[{"text":"WIP","italic":false}]'
+          lore:
+          - '[{"text":"WorkInProgresssssssss","italic":false}]'
+          enchants:
+            WATER_WORKER: 1
+            BINDING_CURSE: 1
+            CHANNELING: 1
+            ARROW_FIRE: 1
+            ARROW_INFINITE: 1
+            VANISHING_CURSE: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: STONE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '[{"text":"WIP","italic":false}]'
+          lore:
+          - '[{"text":"WorkInProgresssssssss","italic":false}]'
+          enchants:
+            WATER_WORKER: 1
+            BINDING_CURSE: 1
+            CHANNELING: 1
+            ARROW_FIRE: 1
+            ARROW_INFINITE: 1
+            VANISHING_CURSE: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+'124':
+  uniqueId: 56549486-9f2d-4af9-b6a4-beb8dbc06585
+  name: MsIodine
+  world: '211017'
+  x: -12
+  y: 71
+  z: -202
+  type: admin
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: SNOW
+    villagerLevel: 4
+  recipes:
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: STONE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '[{"text":"WIP","italic":false}]'
+          lore:
+          - '[{"text":"WorkInProgresssssssss","italic":false}]'
+          enchants:
+            WATER_WORKER: 1
+            BINDING_CURSE: 1
+            CHANNELING: 1
+            ARROW_FIRE: 1
+            ARROW_INFINITE: 1
+            VANISHING_CURSE: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2730
+        type: STONE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '[{"text":"WIP","italic":false}]'
+          lore:
+          - '[{"text":"WorkInProgresssssssss","italic":false}]'
+          enchants:
+            WATER_WORKER: 1
+            BINDING_CURSE: 1
+            CHANNELING: 1
+            ARROW_FIRE: 1
+            ARROW_INFINITE: 1
+            VANISHING_CURSE: 1
+          ItemFlags:
+          - HIDE_ENCHANTS

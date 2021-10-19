@@ -1,0 +1,86 @@
+prefix: '&a[Bolt] &r'
+shopinfo: |-
+  &aBolt Inform��ci��:
+  &fTulaj: &7%owner
+  &fK��szlet: &7%stock
+  &fT��rgy: &7%item
+shopinfo_buy: '&7%amount &fdarab v��s��rl��sa &7%price-t'
+shopinfo_sell: '&7%amount &fdarab elad��sa &7%price-t'
+iteminfo: '''&aT��rgy Inform��ci��: &r'
+iteminfo_fullname: '&fTeljes N��v: &7%item'
+iteminfo_shopname: '&fBolt T��bla: &7%item'
+iteminfo_repaircost: '&fJav��t��si K��lts��g: &7%cost'
+iteminfo_book: |-
+  &fK��nyvc��m: &7%title
+  &fK��nyv Szerz��: &7%author
+  &fK��nyvoldalak: &7%pages
+iteminfo_book_generation: '&fK��nyv Gener��ci��: &7%generation'
+iteminfo_lore: |-
+  &fLore:
+  &r%lore
+METRICS: |-
+  &a[Bolt] &fMetrik��k:
+  &fFi��kok: &7%accounts
+  &f��tlagos tranzakci��k: &7%totalTransactions &f(v��tel: &7%buyTransactions &felad��s: &7%sellTransactions&f)
+  &f��tlagos t��rgy keresked��sek: &7%totalItems &f(v��s��rolt: &7%boughtItems &feladott: &7%soldItems&f)
+ACCESS_DENIED: Nincs enged��lyed hozz��f��rni ennek a boltnak a t��rol��j��hoz!
+TRADE_DENIED: Nincs enged��lyed kereskedni ebben a boltban!
+TRADE_DENIED_ACCESS_PERMS: Nem kereskedhetsz olyan boltokban, amelyekhez hozz��f��rsz!
+TRADE_DENIED_CREATIVE_MODE: Nem kereskedhetsz a boltokban kreat��v m��dban!
+NOT_ENOUGH_MONEY: Nincs el��g p��nzed!
+NOT_ENOUGH_MONEY_SHOP: A bolt tulajnak nincs el��g p��nze!
+CLIENT_DEPOSIT_FAILED: A sz��ml��dra t��rt��n�� befizet��s nem siker��lt!
+SHOP_DEPOSIT_FAILED: A p��nzbefizet��s a bolt tulajnak sikertelen!
+NO_ECONOMY_ACCOUNT: A bolt tulajnak nincs gazdas��gi sz��ml��ja!
+NO_BUYING_HERE: Itt nem lehet v��s��rolni!
+NO_SELLING_HERE: Itt nem lehet eladni!
+NOT_ENOUGH_SPACE_IN_INVENTORY: Nincs el��g hely a k��szletedben!
+NOT_ENOUGH_SPACE_IN_CHEST: Nincs el��g hely a l��d��ban!
+NOT_ENOUGH_ITEMS_TO_SELL: Nincs el��g t��rgyad az elad��shoz!
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [%price %item&7 bolt tele van!](&f%seller&7 pr��b��lt eladni
+  &7Ebben a vil��gban: &f%world
+  &7Ezen a helyen: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: Ez a bolt kifogyott.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [%price %item&7 bolt kifogyott!](&f%buyer&7 pr��b��lt v��s��rolni
+  &7Ebben a vil��gban: &f%world
+  &7Ezen a helyen: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: Vett��l %item-t %owner-t��l/-t��l %price-t.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer v��s��rolt %item-t %price-t.](&7Ebben a vil��gban: &f%world
+  &7Ezen a helyen: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: Eladt��l %item-t %buyer-nak/-nek %price-t.
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller eladott %item-t %price-t.](&7Eben a vil��gban: &f%world
+  &7Ezen a helyen: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: Nem hozhatsz l��tre ilyen t��pus�� boltot!
+NO_CHEST_DETECTED: Nem tal��lhat�� egy l��da!
+INVALID_SHOP_DETECTED: A bolt nem haszn��lhat��!
+INVALID_SHOP_PRICE: A bolt ��ra ��rv��nytelen!
+INVALID_SHOP_QUANTITY: A bolt mennyis��ge ��rv��nytelen!
+CANNOT_ACCESS_THE_CHEST: Nincs enged��lyed hozz��f��rni ehhez a l��d��hoz!
+SELL_PRICE_ABOVE_MAX: Az elad��si ��r meghaladja a maximumot!
+SELL_PRICE_BELOW_MIN: Az elad��si ��r a minimum alatt van!
+BUY_PRICE_ABOVE_MAX: A v��tel��r meghaladja a maximumot!
+BUY_PRICE_BELOW_MIN: A v��tel��r a minimum alatt van!
+CLICK_TO_AUTOFILL_ITEM: Kattints a t��bl��ra azzal a t��rggyal, ami a bolthoz tartozik!
+NO_ITEM_IN_HAND: Nincs egy t��rgy a kezedben az automatikus felt��lt��shez!
+PROTECTED_SHOP: Sikeresen lev��dted a boltot az LWC-vel!
+PROTECTED_SHOP_SIGN: Sikeresen lev��dted a bolt t��bl��t az LWC-vel!
+SHOP_CREATED: A bolt sikeresen l��trehozva!
+SHOP_FEE_PAID: Felsz��mol��sra ker��lt %amount
+SHOP_REFUNDED: Visszat��r��t��sre ker��lt %amount.
+ITEM_GIVEN: '%item adva %player-nak/-nek.'
+RESTRICTED_SIGN_CREATED: A t��bla sikeresen l��trehozva!
+PLAYER_NOT_FOUND: J��t��kos nem tal��lhat��!
+NO_PERMISSION: Ehhez nincs enged��lyed!
+INCORRECT_ITEM_ID: ��rv��nytelen t��rgy id-t adt��l meg!
+INVALID_CLIENT_NAME: A felhaszn��l��neved nem egy ��rv��nyes Minecraft felhaszn��l��n��v!
+NOT_ENOUGH_PROTECTIONS: Nem siker��lt l��trehozni egy lev��d��st!
+NO_SHOP_FOUND: Nem tal��lhat�� bolt.
+CANNOT_CREATE_SHOP_HERE: Itt nem lehet boltot l��trehozni!
+TOGGLE_MESSAGES_OFF: Nem fogsz t��bb ��zeneteket kapni a boltodr��l, vagy boltjaidr��l.
+TOGGLE_MESSAGES_ON: Mostant��l ��zeneteket fogsz kapni a boltodr��l, vagy boltjaidr��l.
+TOGGLE_ACCESS_ON: M��r nem kereskedhetsz olyan boltokban, amelyekhez hozz��f��rsz
+TOGGLE_ACCESS_OFF: Most kereskedhetsz olyan boltokban, amelyekhez hozz��f��rsz

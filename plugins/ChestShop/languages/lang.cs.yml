@@ -1,0 +1,89 @@
+prefix: '&a[Shop] &r'
+shopinfo: |-
+  &aInformace o obchodu:
+  &fMajitel: &7%owner
+  &fSkladem: &7%stock
+  &fItem: &7%item
+shopinfo_buy: '&fKoupit &7%amount &fza &7%price'
+shopinfo_sell: '&fProdat &7%amount &fza &7%price'
+iteminfo: '&aInformace o p��edm��tu: &r'
+iteminfo_fullname: '&fCel�� n��zev: &7%item'
+iteminfo_shopname: '&fN��kupn�� cedule: &7%item'
+iteminfo_repaircost: '&fCena opravy: &7%cost'
+iteminfo_book: |-
+  &fTitul knihy: &7%title
+  &fAutor knihy: &7%author
+  &fPo��et stran: &7%pages
+iteminfo_book_generation: '&fGenerace knihy: &7%generation'
+iteminfo_lore: |-
+  &fLore:
+  &r%lore
+METRICS: |-
+  &a[Shop] &fMetriky:
+  &fPo��et ����t��: &7%accounts
+  &fPr��m��rn�� transakc��: &7%totalTransactions &f(buy: &7%buyTransactions &fsell: &7%sellTransactions&f)
+  &fPr��m��rn�� sm��n��n��ch p��edm��t��: &7%totalItems &f(bought: &7%boughtItems &fsold: &7%soldItems&f)
+ACCESS_DENIED: Nem���� opr��vn��n�� k prohl����en�� obsahu tohoto kontejneru!
+TRADE_DENIED: Nem���� opr��vn��n�� nakupovat v tomto obchod��!
+TRADE_DENIED_ACCESS_PERMS: Nem����ete obchodovat s obchody, ke kter��m m��te p����stup!
+TRADE_DENIED_CREATIVE_MODE: Nem����ete obchodovat s obchody, kdy�� jste v kreativn��m
+  m��du!
+NOT_ENOUGH_MONEY: Nem���� dostatek pen��z!
+NOT_ENOUGH_MONEY_SHOP: Majitel obchodu ji�� nem�� dostatek pen��z!
+CLIENT_DEPOSIT_FAILED: P��ips��n�� pen��z na tv��j ����et selhalo!
+SHOP_DEPOSIT_FAILED: P��ips��n�� pen��z na ����et prodejce selhalo!
+NO_ECONOMY_ACCOUNT: Economy ����et majitele obchodu neexistuje!
+NO_BUYING_HERE: Zde nen�� mo��n�� nakupovat!
+NO_SELLING_HERE: Zde nen�� mo��n�� prod��vat!
+NOT_ENOUGH_SPACE_IN_INVENTORY: Nem���� dost m��sta v invent����i!
+NOT_ENOUGH_SPACE_IN_CHEST: V truhle u�� nen�� dost m��sta!
+NOT_ENOUGH_ITEMS_TO_SELL: Nem���� dostatek p��edm��t�� k prodeji!
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [%price %item&7 obchod p��epln��n!](&f%seller&7 cht��l prodat
+  &7Sv��t: &f%world
+  &7Pozice: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: Obchod je vyprodan��.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [%price %item&7 obchod vyprod��n!](&f%buyer&7 cht��l nakoupit
+  &7Sv��t: &f%world
+  &7Pozice: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: Koupil jsi %item od hr����e %owner za %price.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer koupil %item za %price.](&7Sv��t: &f%world
+  &7Pozice: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: Prodal jsi %item hr����i %buyer za %price.
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller prodal %item za %price.](&7Sv��t: &f%world
+  &7Pozice: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: Nem����e�� vytvo��it tento typ obchodu!
+NO_CHEST_DETECTED: Truhla nenalezena!
+INVALID_SHOP_DETECTED: Obchod nen�� mo��n�� pou����t!
+INVALID_SHOP_PRICE: Obchod m�� neplatnou cenu!
+INVALID_SHOP_QUANTITY: Obchod m�� neplatn�� mno��stv��!
+CANNOT_ACCESS_THE_CHEST: Nem���� pr��vo otev��rat tuto truhlu!
+SELL_PRICE_ABOVE_MAX: Prodejn�� cena je vy������ ne�� nastaven�� maximum!
+SELL_PRICE_BELOW_MIN: Prodejn�� cena je ni������ ne�� nastaven�� minimum!
+BUY_PRICE_ABOVE_MAX: N��kupn�� cena je vy������ ne�� nastaven�� maximum!
+BUY_PRICE_BELOW_MIN: N��kupn�� cena je ni������ ne�� nastaven�� maximum!
+CLICK_TO_AUTOFILL_ITEM: Klikni na ceduli s p��edm��tem, kter�� chce�� prod��vat!
+NO_ITEM_IN_HAND: Nem���� v ruce p��edm��t, automatick�� p��edvypln��n�� nen�� mo��n��!
+PROTECTED_SHOP: Obchod ��sp����n�� ochr��n��n pomoc�� LWC!
+PROTECTED_SHOP_SIGN: Cedule obchodu ��sp����n�� ochr��n��n�� pomoc�� LWC!
+SHOP_CREATED: Obchod vytvo��en!
+SHOP_FEE_PAID: Zaplatil jsi %amount
+SHOP_REFUNDED: Bylo ti vr��ceno %amount.
+ITEM_GIVEN: P��edm��t %item d��n hr����i %player.
+RESTRICTED_SIGN_CREATED: Cedule vytvo��ena!
+PLAYER_NOT_FOUND: Hr���� nenalezen!
+NO_PERMISSION: Na tuto akci nem���� opr��vn��n��!
+INCORRECT_ITEM_ID: Neplatn�� ID p��edm��tu!
+INVALID_CLIENT_NAME: Va��e u��ivatelsk�� jm��no nen�� platn��m u��ivatelsk��m jm��nem
+  Minecraftu!
+NOT_ENOUGH_PROTECTIONS: Ochrana nemohla b��t vytvo��ena!
+NO_SHOP_FOUND: Nebyl nalezen ����dn�� obchod.
+CANNOT_CREATE_SHOP_HERE: Zde nen�� mo��n�� vytvo��it obchod!
+TOGGLE_MESSAGES_OFF: Zpr��vy z tv��ch obchod�� ji�� nebudou nad��le zobrazov��ny.
+TOGGLE_MESSAGES_ON: Zpr��vy z tv��ch obchod�� budou zase zobrazov��ny.
+TOGGLE_ACCESS_ON: Nad��le ji�� nem����e�� obchodovat s obchody, do kter��ch m����
+  p����stup.
+TOGGLE_ACCESS_OFF: Op��t m����e�� obchodovat s obchody, do kter��ch m���� p����stup.

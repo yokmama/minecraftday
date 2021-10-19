@@ -1,0 +1,47 @@
+#
+# Language-File translated by:		Xiaos_heng, Flandre_tw
+#
+  
+  
+  
+Plugin:
+  
+  plugin-enabled: "[P]&a 插件已經成功開啟。"
+  plugin-hook: "[P]&a 成功連結到&6 %Link%&a ！"
+  plugin-update: "[P]&a 插件有新版本 ： &6%NewVersion% &a可以使用 ！\n[P]&a 目前正在運行的版本 ：&6 %Version% &a！\n[P]&a 點擊下載 ： \n[P]&6 %Path%"
+  plugin-disabled: "[P]&a 插件已經成功關閉。"
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-reload: "[P]&a 配置已經重新載入。"
+  command-permission-error: "[P]&c 你沒有使用該指令的權限 ！"
+  command-console-error: "[P]&c 該指令只有玩家能夠使用 ！"
+  
+  command-gsittoggle-on: "[P]&a 你可以點擊右鍵坐下了。"
+  command-gsittoggle-off: "[P]&a 你不能點擊右鍵坐下了。"
+  command-gemote-use-error: "[P]&c Command: /emote <Emote>"
+  command-gemote-emote-error: "[P]&c The Emote&6 %Emote%&c does not exists!"
+  
+  action-sit-water-error: "[P]&c 你不能在潮濕的地方坐下 ！"
+  action-sit-location-error: "[P]&c 你不能在這坐下 ！"
+  action-sit-area-error: "[P]&c 你不能在這個區域坐下 ！"
+  action-sit-ground-error: "[P]&c 你只能坐在地上 ！"
+  action-sit-already-error: "[P]&c 你已經坐下了 ！"
+  action-sit-safe-error: "[P]&c 你不能在不安全的地方坐下 ！"
+  action-sit-world-error: "[P]&c 你不能在這個世界坐下 ！"
+  action-sit-info: "&a使用&6 %Key%&a 鍵站起來 ！"
+  
+  action-lay-location-error: "[P]&c 你不能在這裡躺下 ！"
+  action-lay-area-error: "[P]&c 你不能在這個區域躺下 ！"
+  action-lay-ground-error: "[P]&c 你只能躺在地上 ！"
+  action-lay-already-error: "[P]&c 你已經躺下了 ！"
+  action-lay-world-error: "[P]&c 你不能在這個世界躺下 ！"
+  action-lay-info: "&a使用&6 %Key%&a 鍵站起來 ！"
+  
+  action-crawl-location-error: "[P]&c You can't crawl here!"
+  action-crawl-world-error: "[P]&c You can't crawl in this World!"
+  
+  action-blocked-error: "[P]&c 你現在無法執行該指令 ！"

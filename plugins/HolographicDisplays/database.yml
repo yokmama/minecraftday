@@ -1,0 +1,139 @@
+seikatu-p1:
+  location: seikatu, -127.500, 71.000, -22.500
+  lines:
+  - '&a&n資源ワールドポータル'
+shigen-p1:
+  location: world, -60.500, 73.000, -125.500
+  lines:
+  - '&e&n生活ワールドポータル'
+seikatu-news:
+  location: seikatu, -118.500, 72.200, -35.500
+  lines:
+  - '&u&l-= お知らせ =-'
+  - '&b生活ワールドのルール&fを見やすくしました！'
+  - '&7(2021/07/13)'
+  - '&8...'
+  - '&b本屋&fが撤去されました。'
+  - '&7(2021/07/20)'
+  - '&8...'
+  - '&bホームセンター&fを改築しました。'
+  - '&7(2021/07/21)'
+seikatu-info1:
+  location: seikatu, -107.500, 72.200, -35.500
+  lines:
+  - '&a&lJOBS&a(職業プラグイン) &fの使い方'
+  - '&e1 &f/jobs join とチャット欄に入力して&nEnterキー&fを押す。'
+  - '&e2 &f出てきたGUIからなりたい職業を&n右クリック&f。左クリックすると詳細が見れます。'
+  - '&e3 &fYou have joined the job 〇〇〇 と出てきたら成功です！'
+  - '&e4 &f職業は &e2 &fのところで&nホイールクリック&fすると辞めることができます。'
+  - '...'
+  - 職業の詳しい説明などは↓にあるボタンを右クリックしてください。
+sigen-info1:
+  location: world, -54.500, 61.500, -125.500
+  lines:
+  - このサーバーは&c&l&n認証された人&e&l&nしか遊べません。
+  - '[Admin] [GM] が居ない場合は対応ができないのであらかじめご了承ください。'
+  - 認証には&9&lDiscord&r・&a&lLINE&rの&c&n&l両方が必要です。
+  - '...'
+  - '&eよくわからないひとはほごしゃのかたをよんでください。'
+seikatu-west:
+  location: seikatu, -153.500, 71.700, -20.500
+  lines:
+  - '&b&l西'
+  - '&f(west)'
+seikatu-north:
+  location: seikatu, -125.500, 71.700, -38.500
+  lines:
+  - '&6&l北'
+  - (north)
+seikatu-east:
+  location: seikatu, -101.500, 71.700, -21.500
+  lines:
+  - '&a&l東'
+  - (east)
+seikatu-south:
+  location: seikatu, -130.500, 71.700, -0.500
+  lines:
+  - '&e&l南'
+  - (south)
+seikatu-info2:
+  location: seikatu, -127.500, 71.500, -30.500
+  lines:
+  - '&b[|][/][x]&r ここは&b&l生活ワールド&rです。 &b[x][/][|]'
+  - '現在のプレイヤー数: &e{online}人'
+  - このワールドは&n基本リセットしない&r為、
+  - 素材集めや探索等は&a&l資源ワールド&rで行ってください。
+seikatu-info3:
+  location: seikatu, -118.500, 72.200, -25.500
+  lines:
+  - '&b&l生活ワールド&f&lのルール'
+  - '&e1&7.&rゲームが重たくなることは禁止'
+  - '&7(TNTやトラップタワー、ペットの飼いすぎなど)'
+  - '&e2&7.&f他の人がいやがるようなことは禁止'
+  - '&7(悪口や他の人の家をかいぞうするなど)'
+  - '&e3&7.&fバグやチートを使うことは禁止'
+  - '&7(アイテムぞうしょくやXrayなど)'
+  - '&8...'
+  - '&aルールなどで分からないことがあったら'
+  - '&9[&bGM&9]&aや&5[&dAdmin&5]&aたちに聞いてください。'
+sigen-info2:
+  location: world, -70.500, 73.500, -125.500
+  lines:
+  - '&a[|][/][x]&r ここは&a&l資源ワールド&rです。 &a[x][/][|]'
+  - '現在のプレイヤー数: &e{online}人'
+  - このワールドは&n不定期リセット&rされるため、
+  - 建築等は&b&l生活ワールド&rで行ってください。
+seikatu-iken:
+  location: seikatu, -121.500, 68.500, -47.500
+  lines:
+  - '&6&l運営ボックス'
+  - '&f意見を書いた本を入れるとたまに'
+  - '&f採用されるかもしれないボックス。'
+  - '&f採用されると&e&l&n返礼品&fがもらえる！'
+money100:
+  location: seikatu, -142.500, 66.800, 35.500
+  lines:
+  - '&b$100'
+money1000:
+  location: seikatu, -143.500, 66.800, 35.500
+  lines:
+  - '&b$1000'
+money5000:
+  location: seikatu, -144.500, 66.800, 35.500
+  lines:
+  - '&b$5000'
+money10000:
+  location: seikatu, -146.500, 66.800, 37.500
+  lines:
+  - '&b$10000'
+money50000:
+  location: seikatu, -146.500, 66.800, 38.500
+  lines:
+  - '&b$50000'
+money100000:
+  location: seikatu, -146.500, 66.800, 39.500
+  lines:
+  - '&b$100000'
+seikatu-bank:
+  location: seikatu, -150.500, 67.200, 28.500
+  lines:
+  - '&b&l銀行 &b(換金・引換所)'
+  - 換金券やサーモンを
+  - 換金したりアイテムと引き換えたり
+  - できる施設。
+potion1:
+  location: seikatu, -180.500, 66.750, 37.500
+  lines:
+  - 治癒
+potion2:
+  location: seikatu, -180.500, 66.750, 36.500
+  lines:
+  - 負傷
+potion3:
+  location: seikatu, -180.500, 66.750, 35.500
+  lines:
+  - 弱化
+setspawn1:
+  location: seikatu, -77.500, 71.000, -26.500
+  lines:
+  - '&eリスポーン地点変更'

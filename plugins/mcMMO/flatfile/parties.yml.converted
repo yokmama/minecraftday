@@ -1,0 +1,16 @@
+豆腐ですよろ:
+  Leader: 4bc397f7-87b2-4192-9bd6-73a3a3460914|shun_tofu
+  Locked: true
+  Level: 0
+  Xp: 2400
+  Ally: ''
+  ExpShareMode: NONE
+  ItemShareMode: NONE
+  ItemShareType:
+    LOOT: true
+    MINING: true
+    HERBALISM: true
+    WOODCUTTING: true
+    MISC: true
+  Members:
+  - 4bc397f7-87b2-4192-9bd6-73a3a3460914|shun_tofu

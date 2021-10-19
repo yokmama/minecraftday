@@ -1,0 +1,111 @@
+language: EN
+disabledWorlds:
+- world_nether
+- world_the_end
+countDown: 60
+playersToStart: 2
+bossBar:
+  color: YELLOW
+  style: SEGMENTED_20
+actionBar:
+  resultChar: ●
+warnIntervals:
+- '60:55'
+- '45:40'
+- '30:25'
+- '10:1'
+pauseAfterVoting: 300
+economy:
+  enable: true
+  type: VAULT
+  price:
+    start: 10.0
+    vote: 0.0
+requireTheSameWorlds: false
+GUI:
+  lines: 6
+  CommonItems:
+    NULL_SLOT:
+      material: STAINED_GLASS_PANE
+      materialData: 15
+    INFO:
+      material: BOOK
+      materialData: 0
+      slot: 49
+  Buttons:
+    AGREE:
+      material: STAINED_CLAY
+      materialData: 13
+      slot: 47
+    DISAGREE:
+      material: STAINED_CLAY
+      materialData: 14
+      slot: 51
+  States:
+    DAY:
+      material: WATCH
+      materialData: 0
+      slot: 18
+    NIGHT:
+      material: CONCRETE
+      materialData: 15
+      slot: 20
+    SUN:
+      material: DOUBLE_PLANT
+      materialData: 0
+      slot: 22
+    RAIN:
+      material: SPONGE
+      materialData: 1
+      slot: 24
+    STORM:
+      material: FLINT_AND_STEEL
+      materialData: 0
+      slot: 26
+    CUSTOM:
+      material: NETHER_STAR
+      materialData: 0
+  Core:
+    Custom:
+      Running:
+        material: REDSTONE
+        materialData: 0
+        slot: 4
+    Waiting:
+      material: SULPHUR
+      materialData: 0
+      slot: 4
+    Running:
+      material: REDSTONE
+      materialData: 0
+      slot: 4
+    Ending:
+      material: GLOWSTONE_DUST
+      materialData: 0
+      slot: 4
+resultCommands:
+  GLOBAL:
+    commands: []
+  SUCCESS_FOR_ALL:
+    commands: []
+  SUCCESS_FOR_YES_VOTERS:
+    commands:
+    - tell {player} You voted YES in previous voting cycle!
+  FAIL_FOR_ALL:
+    commands: []
+  FAIL_FOR_NO_VOTERS:
+    commands:
+    - tell {player} You voted NO in previous voting cycle!
+Custom:
+  Event:
+    GLOBAL:
+      commands: []
+    SUCCESS_FOR_ALL:
+      commands: []
+    SUCCESS_FOR_YES_VOTERS:
+      commands:
+      - warp Event {player}
+    FAIL_FOR_ALL:
+      commands: []
+    FAIL_FOR_NO_VOTERS:
+      commands: []

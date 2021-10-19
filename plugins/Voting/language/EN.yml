@@ -1,0 +1,157 @@
+prefix: '&3&lVoting &5❱'
+errors:
+  consoleError: '&cCommands can be performed only via Player!'
+  noPermissions: '&cYou are not permitted to use this command!'
+  noStatePermissions: '&cYou are not permitted to start this state!'
+  noVotePermissions: '&cYou are not permitted to vote!'
+  noSignPermissions: '&cYou are not permitted to manipulate with signs!'
+  wrongUsageOfCommand: '&cWrong usage of command!'
+  noCycle: '&cNo voting cycle at this moment!'
+  cycle: '&cVoting has already started! Wait until it ends!'
+  voted: '&cYou have already voted in current voting!'
+  pause: '&cVoting is unavailable due to pause! Please, try again in a few seconds!'
+  notEnoughPlayers: '&cNot enough players to start voting!'
+  disabledWorld: '&cIn this world is not allowed to start voting!'
+  custom: '&cCustom question &3{customName} &cdoes not exist!'
+  money:
+    start: '&cNot enough money to start voting!'
+    vote: '&cNot enough money to participate of voting!'
+  requiredWorlds: '&cYou are not in the same world as world in voting cycle!'
+  world:
+    notExist: '&cWorld &3{world} &cdoes not exist!'
+    exist: '&cWorld &3{world} &chas been already add to this list!'
+success:
+  vote: '&7Your vote was recorded!'
+  start: '&7Player &3{player} &7would want &3{state} &7in world &3{world}&7!'
+  result:
+    FAIL: '&cVoting for &3{state} &cin world &3{world} &cwas unsuccessful!'
+    SUCCESS: '&7Voting for &3{state} &7in world &3{world} &7was successful!'
+    ADMIN: '&7Result of voting &5» &a{yes}&7:&c{no}&7'
+  reload: '&7Files successfully reloaded!'
+  sign:
+    create: '&7Sign successfully created!'
+    remove: '&7Sign successfully removed!'
+  world:
+    set: '&7World &3{world} &7with alias &3{alias} &7added to list!'
+    disable: '&7World &3{world} &7added to list of disabled worlds!'
+aliases:
+  worlds:
+    world: Survival
+    seikatu: life
+  state:
+    DAY: Day
+    NIGHT: Night
+    SUN: Sun
+    RAIN: Rain
+    STORM: Storm
+clickable:
+  participate:
+    agree:
+      ul: '&5● '
+      message: '&7&nI want, too'
+      hover: '&7Click to select this option!'
+      command: /voting yes
+    disagree:
+      ul: '&5● '
+      message: '&7&nI do not want a change'
+      hover: '&7Click to select this option!'
+      command: /voting no
+bossBar:
+  DEFAULT: '&7&lVoting for &2&l{state} &7&lin world &2&l{world}&7&l! | &2&l{time}&7&ls'
+signs:
+  voting:
+    '1': '&9[Voting]'
+    '2': '&l{state}'
+    '3':
+      Waiting: '&8Waiting...'
+      Running: '&4&lRunning'
+      Ending: '&4&lEnding...'
+    '4':
+      Waiting: '&1&lClick to start'
+      Running: '&3&lEnds in &4&l{time}'
+      Ending: '&3&lWait! &4&l{time}'
+      Finish: '&4&lEnd'
+GUI:
+  VotingGUI:
+    nameOfInventory: '&1&lVoting'
+  CommonItems:
+    INFO:
+      headName: '&2&lBasic information'
+      lore:
+      - '&6✎ &7This voting ables to change'
+      - '&7weather. Each player can participate'
+      - '&7to current voting and say his own'
+      - '&7opinion!'
+      - ''
+      - '&6● &7Voting takes some period. After end,'
+      - '&7system decides about result!'
+  Buttons:
+    AGREE:
+      headName: '&2&lI want, too'
+      lore:
+      - '&6● &7Click to select this option!'
+    DISAGREE:
+      headName: '&2&lI do not want a change'
+      lore:
+      - '&6● &7Click to select this option!'
+  States:
+    DAY:
+      headName: '&2&lDay'
+      lore:
+      - '&6● &7Click to start voting!'
+    NIGHT:
+      headName: '&2&lNight'
+      lore:
+      - '&6● &7Click to start voting!'
+    SUN:
+      headName: '&2&lSun'
+      lore:
+      - '&6● &7Click to start voting!'
+    RAIN:
+      headName: '&2&lRain'
+      lore:
+      - '&6● &7Click to start voting!'
+    STORM:
+      headName: '&2&lStorm'
+      lore:
+      - '&6● &7Click to start voting!'
+  Core:
+    Custom:
+      Running:
+        headName: '&2&lVoting'
+        lore:
+        - '&6● &7Ends in &6» &3{countDown}s'
+    Waiting:
+      headName: '&2&lNo voting'
+      lore:
+      - '&6● &7No voting cycle, now!'
+    Running:
+      headName: '&2&lVoting'
+      lore:
+      - '&6● &7For &6» &3{coreState}'
+      - '&6● &7In world &6» &3{world}'
+      - ''
+      - '&6● &7Ends in &6» &3{countDown}s'
+    Ending:
+      headName: '&2&lBreak'
+      lore:
+      - '&6● &7Ends in &6» &3{countDown}s'
+Custom:
+  Event:
+    start: '&7Do you want &3Event&7?'
+    result:
+      FAIL: '&cVoting for &3Event &cwas unsuccessful!'
+      SUCCESS: '&7Voting for &3Event &7was successful!'
+      ADMIN: '&7Result of voting &5» &a{yes}&7:&c{no}&7'
+    clickable:
+      agree:
+        ul: '&5● '
+        message: '&7&nYes, I want Event'
+        hover: '&7Click to select this option!'
+        command: /voting yes
+      disagree:
+        ul: '&5● '
+        message: '&7&nNo, I do not want Event'
+        hover: '&7Click to select this option!'
+        command: /voting no
+    bossBar: '&7&lVoting for &2&lEvent&7&l! | &2&l{time}&7&ls'

@@ -1,0 +1,29 @@
+#
+# Language-File created by:		Gecolay
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a Das Plugin wurde erfolgreich aktiviert."
+  plugin-update: "[P]&6 %Name%&a hat ein Update:&6 %NewVersion%&a!\n[P]&a Aktuelle Version:&6 %Version%&a!\n[P]&a Neueste Version herunterladen:&6 %Path%"
+  plugin-stop: "[P]&a Das Plugin wurde erfolgreich deaktiviert."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a Die Einstellungen wurden erfolgreich reloaded."
+  command-permission-error: "[P]&c Du hast keine Rechte auf diesen Befehl!"
+  command-consol-error: "[P]&c Dieser Befehl ist nur für Spieler!"
+  command-gsit-waterlogged-error: "[P]&c Du darfst dich nicht in überschwemmte Blöcke setzen!"
+  command-gsit-blocked-error: "[P]&c Du darfst dich hier nicht setzen!"
+  command-gsit-already-sit-error: "[P]&c Du sitzt bereits!"
+  command-gsit-in-block-error: "[P]&c Du darfst dich nicht in einen Block setzen!"
+  command-gsit-world-error: "[P]&c Du darfst dich in dieser Welt nicht setzen!"
+  command-gsit-on-ground-error: "[P]&c Du darfst dich hier nicht setzen!"
+  command-gsit-toggle-off: "[P]&a Du kannst dich jetzt wieder durch klicken setzen."
+  command-gsit-toggle-on: "[P]&a Du kannst dich jetzt nicht mehr durch klicken setzen."
+  command-gsit-stand-up: "&aNutze deine Schleichen-Taste um aufzustehen."

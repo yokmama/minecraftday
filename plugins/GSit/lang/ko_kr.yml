@@ -1,0 +1,36 @@
+#
+# Language-File created by:		Koita0724
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a 플러그인이 성공적으로 적용되었습니다."
+  plugin-link: "[P]&6 %Link%&a 플러그인과 성공적으로 연결이 되었습니다!"
+  plugin-update: "[P]&a 새로운 버전이 있습니다! 버전:&6 %NewVersion%&a!\n[P]&a 사용중인 버전:&6 %Version%&a!\n[P]&a 최신버전 다운로드:\n[P]&6 %Path%"
+  plugin-stop: "[P]&a 플러그인이 성공적으로 비활성화 되었습니다."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a 셋팅이 정상적으로 리로드 되었습니다."
+  command-permission-error: "[P]&c 당신은 권한이 없어 사용할수 없습니다!"
+  command-consol-error: "[P]&c 이 커맨드는 플레이어들만 쓸수 있습니다!"
+  command-gsit-waterlogged-error: "[P]&c 당신은 물에 잠긴상태로 앉을수 없습니다!"
+  command-gsit-blocked-error: "[P]&c 당신은 여기서 앉을수 없습니다!"
+  command-gsit-already-sit-error: "[P]&c 당신은 이미 앉은 상태입니다!"
+  command-gsit-in-block-error: "[P]&c 블럭 안에서는 앉을수 없습니다!"
+  command-gsit-world-error: "[P]&c 이 월드에서는 앉을수 없습니다!"
+  command-gsit-on-ground-error: "[P]&c 당신은 여기서 앉을수 없습니다!"
+  command-gsit-sit: "&aShift키를 눌러 일어날수 있습니다"
+  command-glay-blocked-error: "[P]&c 당신은 여기서 누을수 없습니다!"
+  command-glay-already-lay-error: "[P]&c 당신은 이미 눞고 있습니다!"
+  command-glay-world-error: "[P]&c 당신은 이 월드에서 누을수 없습니다!"
+  command-glay-on-ground-error: "[P]&c 당신은 여기서 누을수 없습니다!"
+  command-glay-lay: "&aShift키를 눌러 일어날수 있습니다"
+  command-blocked-error: "[P]&c 당신은 이 명령어를 지금 사용하실수 없습니다!"
+  command-gsittoggle-off: "[P]&a 당신은 마우스 클릭으로 앉을수 있게되었습니다."
+  command-gsittoggle-on: "[P]&a 당신은 마우스 클릭으로 앉을수 없게되었습니다."

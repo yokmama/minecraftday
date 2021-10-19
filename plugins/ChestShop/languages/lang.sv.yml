@@ -1,0 +1,90 @@
+prefix: '&a[Aff��r] &r'
+shopinfo: |-
+  &aAff��r-information:
+  &f��gare: &7%owner
+  &fLager: &7%stock
+  &fArtikel: &7%item
+shopinfo_buy: '&fK��p &7%amount &ff��r &7%price'
+shopinfo_sell: '&fS��lj &7%amount &ff��r &7%price'
+iteminfo: '&aArtikel-information: &r'
+iteminfo_fullname: '&fFullt Namn: &7%item'
+iteminfo_shopname: '&fAff��r-skylt: &7%item'
+iteminfo_repaircost: '&fLagnings-kostnad: &7%cost'
+iteminfo_book: |-
+  &fBokens Titel: &7%title
+  &fBokens F��rfattare: &7%author
+  &fBokens Sidor: &7%pages
+iteminfo_book_generation: '&fBok-generation: &7%generation'
+iteminfo_lore: |-
+  &fBeskrivning:
+  &r%lore
+METRICS: |-
+  &a[Aff��r] &fMetrics:
+  &fKonton: &7%accounts
+  &fGenomsnittlig transaktion: &7%totalTransactions &f(k��p: &7%buyTransactions &fs��lj: &7%sellTransactions&f)
+  &fGenomsnittliga artiklar byteshandlade: &7%totalItems &f(k��pt: &7%boughtItems &fs��lt: &7%soldItems&f)
+ACCESS_DENIED: Du har inte beh��righet att komma ��t butikens kista!
+TRADE_DENIED: Du har inte tillst��nd att byteshandla med denna aff��r!
+TRADE_DENIED_ACCESS_PERMS: Du kan inte byteshandla med butiker som du har tillg��ng
+  till!
+TRADE_DENIED_CREATIVE_MODE: Du kan inte byteshandla med butiker medan du ��r i kreativt
+  l��ge!
+NOT_ENOUGH_MONEY: Du har inte r��d!
+NOT_ENOUGH_MONEY_SHOP: Aff��rs��garen har inte tillr��ckligt med pengar!
+CLIENT_DEPOSIT_FAILED: Pengarna kunde inte s��ttas in p�� ditt konto!
+SHOP_DEPOSIT_FAILED: Pengarna kunde inte s��ttas in hos ��garen!
+NO_ECONOMY_ACCOUNT: Aff��rs��garen har inget bankkonto!
+NO_BUYING_HERE: Du kan inte k��pa h��r!
+NO_SELLING_HERE: Du kan inte s��lja h��r!
+NOT_ENOUGH_SPACE_IN_INVENTORY: Du har inte tillr��ckligt med plats i ditt personliga
+  f��rr��d!
+NOT_ENOUGH_SPACE_IN_CHEST: Det finns inte tillr��ckligt med utrymme i kistan!
+NOT_ENOUGH_ITEMS_TO_SELL: Du har inte tillr��ckligt med f��rem��l f��r att s��lja!
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [%price %item&7 aff��ren ��r full!](&f%seller&7 f��rs��kte att s��lja
+  &7V��rld: &f%world
+  &7Exakta koordinater: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: Denna aff��r har slut p�� lager.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [%price %item&7 aff��rens lager ��r slut!](&f%buyer&7 f��rs��kte k��pa
+  &7V��rld: &f%world
+  &7Exakta koordinater: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: Du k��pte %item fr��n %owner f��r %price.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer k��pte %item f��r %price.](&7V��rld: &f%world
+  &7Exakta koordinater: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: Du s��lde %item till %buyer f��r %price.
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller s��lde %item f��r %price.](&7V��rld: &f%world
+  &7Exakta koordinater: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: Du kan inte skapa denna typ av aff��r!
+NO_CHEST_DETECTED: Kunde inte hitta en kista!
+INVALID_SHOP_DETECTED: Aff��ren kan inte anv��ndas!
+INVALID_SHOP_PRICE: Aff��ren har ett ogiltigt pris!
+INVALID_SHOP_QUANTITY: Aff��ren har ett ogiltigt antal!
+CANNOT_ACCESS_THE_CHEST: Du har inte beh��righet att komma ��t denna kista!
+SELL_PRICE_ABOVE_MAX: S��ljpriset ��r mer ��n max!
+SELL_PRICE_BELOW_MIN: S��ljpriset ��r under det minsta!
+BUY_PRICE_ABOVE_MAX: Priset ��r ��ver max!
+BUY_PRICE_BELOW_MIN: Priset ��r f��r l��gt!
+CLICK_TO_AUTOFILL_ITEM: Klicka p�� skylten med det f��rem��l som denna aff��r kommer
+  s��lja/k��pa!
+NO_ITEM_IN_HAND: Du har inte ett f��rem��l i handen f��r att autofylla!
+PROTECTED_SHOP: Aff��ren lyckades bli skyddad med LWC!
+PROTECTED_SHOP_SIGN: Aff��rsskylten lyckades bli skyddad med LWC!
+SHOP_CREATED: Aff��ren har skapats!
+SHOP_FEE_PAID: Du har blivit avdragen %amount
+SHOP_REFUNDED: Du har ��terbetalats %amount.
+ITEM_GIVEN: Gav %item till %player.
+RESTRICTED_SIGN_CREATED: Skylt skapad!
+PLAYER_NOT_FOUND: Spelaren hittades inte!
+NO_PERMISSION: You don't have permissions to do that!
+INCORRECT_ITEM_ID: You have specified an invalid item id!
+INVALID_CLIENT_NAME: Your username is not a valid Minecraft username!
+NOT_ENOUGH_PROTECTIONS: Could not create a protection!
+NO_SHOP_FOUND: No shop found.
+CANNOT_CREATE_SHOP_HERE: You can't create shop here!
+TOGGLE_MESSAGES_OFF: You will no longer receive messages from your shop(s).
+TOGGLE_MESSAGES_ON: You will now receive messages from your shop(s).
+TOGGLE_ACCESS_ON: You can no longer trade at shops that you have access to
+TOGGLE_ACCESS_OFF: You can now trade at shops that you have access to

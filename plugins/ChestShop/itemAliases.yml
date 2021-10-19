@@ -1,0 +1,4 @@
+# This file specified optional aliases for certain item codes. (Use the full name from /iteminfo)
+# Please note that these aliases should fit on a sign for it to work properly!
+Item String#3d: My Cool Item
+Other Material#Eg: Some other Item

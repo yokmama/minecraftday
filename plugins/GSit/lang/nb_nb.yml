@@ -1,0 +1,29 @@
+#
+# Language-File created by:		Gecolay
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a Vellykket innlasting av plugin."
+  plugin-update: "[P]&a Denne pluginen har en ny versjon:&6 %NewVersion%&a!\n[P]&a Du bruker den utdaterte versjonen:&6 %Version%&a!\n[P]&a Last ned den nyeste versjonen:&6 %Path%"
+  plugin-stop: "[P]&a Stopp av plugin var vellykket."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a Ny opplasting av innstillinger var vellykket."
+  command-permission-error: "[P]&c Du har ikke tillatelse til å utføre denne kommandoen!"
+  command-consol-error: "[P]&c Denne kommandoen er kun for spillere!"
+  command-gsit-waterlogged-error: "[P]&c Du kan ikke sitte i vannete blokker!"
+  command-gsit-blocked-error: "[P]&c Du kan ikke sitte her!"
+  command-gsit-already-sit-error: "[P]&c Du sitter allerede!"
+  command-gsit-in-block-error: "[P]&c Du kan ikke sitte i en blokk!"
+  command-gsit-world-error: "[P]&c Du kan ikke sitte i denne verdenen!"
+  command-gsit-on-ground-error: "[P]&c Du kan ikke sitte her!"
+  command-gsit-toggle-off: "[P]&a Du kan nå sette deg ned igjen ved å klikke."
+  command-gsit-toggle-on: "[P]&a Du kan ikke lenger sette deg ned ved å klikke."
+  command-gsit-stand-up: "&aBruk Sneak-tasten til å reise deg."

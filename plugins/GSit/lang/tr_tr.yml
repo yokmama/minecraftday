@@ -1,0 +1,29 @@
+#
+# Language-File created by:		Kağan Yılmaz (KeksToGo)
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a Eklenti Başarıyla Eklendi."
+  plugin-update: "[P]&a Bu Eklentinin Yeni Versiyonu Var :&6 %NewVersion%&a!\n[P]&a Eski Versiyonunu Kullanıyorsun:&6 %Version%&a!\n[P]&a Son Sürümü İndir:&6 %Path%"
+  plugin-stop: "[P]&a Eklenti Başarıyla Kapatıldı."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a Ayarlar Başarıyla Yenilendi."
+  command-permission-error: "[P]&c Bu Komutu Kullanmaya Yetkin Yok!"
+  command-consol-error: "[P]&c Bu Komut Sadece Oyuncular İçin!"
+  command-gsit-waterlogged-error: "[P]&c Su Dolu Bloklara Oturamazsın!"
+  command-gsit-blocked-error: "[P]&c Buraya Oturamazsın!"
+  command-gsit-already-sit-error: "[P]&c Zaten Oturuyorsun!"
+  command-gsit-in-block-error: "[P]&c Bu Bloğa Oturamazsın!"
+  command-gsit-world-error: "[P]&c Bu Dünyada Oturamazsın!"
+  command-gsit-on-ground-error: "[P]&c Buraya Oturamazsın!"
+  command-gsit-toggle-off: "[P]&a Şimdi Tıklamayla Oturabilirsin."
+  command-gsit-toggle-on: "[P]&a Şimdi Tıklamayla Oturamazsın."
+  command-gsit-stand-up: "&aAyağa kalkmak için Sneak-Key'inizi kullanın."

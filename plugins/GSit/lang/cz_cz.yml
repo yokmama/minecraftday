@@ -1,0 +1,47 @@
+#
+# Language-File translated by:		ProfesorOfCruelion
+#
+  
+  
+  
+Plugin:
+  
+  plugin-enabled: "[P]&a Plugin byl úspěšně zapnut."
+  plugin-hook: "[P]&a Úspěšně připojeno k&6 %Link%&a!"
+  plugin-update: "[P]&a K dispozici je nová verze:&6 %NewVersion%&a!\n[P]&a Aktuálně používáš:&6 %Version%&a!\n[P]&a Stáhni si nejnovější verzi na:\n[P]&6 %Path%"
+  plugin-disabled: "[P]&a Plugin byl úspěšně vypnut."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-reload: "[P]&a Nastavení bylo úspěšně obnoveno.."
+  command-permission-error: "[P]&c Na tento příkaz nemáš povolení.!"
+  command-console-error: "[P]&c Tento příkaz může použít pouze hráč.!"
+  
+  command-gsittoggle-on: "[P]&a Nyní si můžeš sednout kliknutím."
+  command-gsittoggle-off: "[P]&a Již nemůžeš sedět kliknutím.."
+  command-gemote-use-error: "[P]&c Příkaz: /emote <Emoce>"
+  command-gemote-emote-error: "[P]&c Emove&6 %Emote%&c neexistuje!"
+  
+  action-sit-water-error: "[P]&c Je zde vlhko, nemůžeš se posadit!"
+  action-sit-location-error: "[P]&c Zde nemůžeš sedět!"
+  action-sit-area-error: "[P]&c V této oblasti nemůžeš sedět!"
+  action-sit-ground-error: "[P]&c Sedět můžeš pouze na zemi!"
+  action-sit-already-error: "[P]&c Již sedíš."
+  action-sit-safe-error: "[P]&c Zde není bezpečné sedět!"
+  action-sit-world-error: "[P]&c V tomto světe nemůžeš sedět!"
+  action-sit-info: "&aPoužij&6 %Key%&a pro vstaní!"
+  
+  action-lay-location-error: "[P]&c Zde nemůžeš ležet!"
+  action-lay-area-error: "[P]&c V této oblastni nemůžeš ležet!"
+  action-lay-ground-error: "[P]&c Ležet můžeš pouze na zemi!"
+  action-lay-already-error: "[P]&c Již ležíš!"
+  action-lay-world-error: "[P]&c V tomt světe nemůžeš ležet!"
+  action-lay-info: "&aPoužij&6 %Key%&a pro vstaní!"
+  
+  action-crawl-location-error: "[P]&c You can't crawl here!"
+  action-crawl-world-error: "[P]&c You can't crawl in this World!"
+  
+  action-blocked-error: "[P]&c Aktuálně tento příkaz nelze použít!"

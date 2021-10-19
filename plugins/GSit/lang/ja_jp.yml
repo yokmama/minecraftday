@@ -1,0 +1,47 @@
+#
+# Language-File translated by:		Namiu
+#
+  
+  
+  
+Plugin:
+  
+  plugin-enabled: "[P]&a プラグインの有効化が完了しました。"
+  plugin-hook: "[P]&6 %Link%&aとの接続に成功しました！"
+  plugin-update: "[P]&a 新バージョンのご案内:&6 %NewVersion%&a!\n[P]&a 現在のバージョン:&6 %Version%&a!\n[P]&a 最新版のダウンロードはこちら:\n[P]&6 %Path%"
+  plugin-disabled: "[P]&a プラグインの無効化に成功しました。"
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-reload: "[P]&a 設定のリロードに成功しました。"
+  command-permission-error: "[P]&c このコマンドを使用する権限がありません！"
+  command-console-error: "[P]&c このコマンドはプレイヤーのみが実行できます！"
+  
+  command-gsittoggle-on: "[P]&a クリックすると座れるようになりました。"
+  command-gsittoggle-off: "[P]&a クリックしても座れなくなりました。"
+  command-gemote-use-error: "[P]&c コマンド: /emote <Emote>"
+  command-gemote-emote-error: "[P]&c そのエモート&6 %Emote%&c は存在しません！"
+  
+  action-sit-water-error: "[P]&c 水中で座ることはできません！"
+  action-sit-location-error: "[P]&c この場所では座れません！"
+  action-sit-area-error: "[P]&c このエリアでは座れません！"
+  action-sit-ground-error: "[P]&c 地面に座ることしかできません！"
+  action-sit-already-error: "[P]&c すでに座っています！"
+  action-sit-safe-error: "[P]&c ここに座るのは危険です！"
+  action-sit-world-error: "[P]&c この世界では座れません！"
+  action-sit-info: "&6 %Key%&a キーを使って立ち上がろう！"
+  
+  action-lay-location-error: "[P]&c この場所では寝れません！"
+  action-lay-area-error: "[P]&c このエリアでは寝れません！"
+  action-lay-ground-error: "[P]&c 地面に寝ることしかできません！"
+  action-lay-already-error: "[P]&c すでに寝ています！"
+  action-lay-world-error: "[P]&c この世界では寝れません！"
+  action-lay-info: "&6 %Key%&a キーを使って立ち上がろう！"
+  
+  action-crawl-location-error: "[P]&c You can't crawl here!"
+  action-crawl-world-error: "[P]&c You can't crawl in this World!"
+  
+  action-blocked-error: "[P]&c 現在、このコマンドを実行することは許可されていません！"

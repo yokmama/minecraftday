@@ -1,0 +1,29 @@
+#
+# Language-File created by:		Gecolay
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a El Plugin se ha cargado correctamente."
+  plugin-update: "[P]&a Este complemento tiene una nueva versión:&6 %NewVersion%&a!\n[P]&a Usas la versión desactualizada:&6 %Version%&a!\n[P]&a Descargue la última versión:&6 %Path%"
+  plugin-stop: "[P]&a El Plugin ha sido desactivado."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a Las configuraciones han sido recargadas."
+  command-permission-error: "[P]&c Notienes permiso para usar ese comando!"
+  command-consol-error: "[P]&c This Command is only for Players!"
+  command-gsit-waterlogged-error: "[P]&c ¡No puedes sentarte en bloques anegados!"
+  command-gsit-blocked-error: "[P]&c ¡No te puedes sentar aquí!"
+  command-gsit-already-sit-error: "[P]&c Ya estas sentado!"
+  command-gsit-in-block-error: "[P]&c ¡No puedes sentarte en un bloque!"
+  command-gsit-world-error: "[P]&c ¡No puedes sentarte en este mundo!"
+  command-gsit-on-ground-error: "[P]&c ¡No te puedes sentar aquí!"
+  command-gsit-toggle-off: "[P]&a Ahora puede volver a sentarse haciendo clic."
+  command-gsit-toggle-on: "[P]&a Ya no puede sentarse haciendo clic."
+  command-gsit-stand-up: "&aUse su Sneak-Key para ponerse de pie."

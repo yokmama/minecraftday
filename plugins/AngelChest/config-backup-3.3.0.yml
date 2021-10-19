@@ -1,0 +1,991 @@
+#############################
+#####   AngelChestPlus  #####
+#############################
+
+# written by mfnalex / JEFF Media GbR
+
+##### WARNING! #####
+# This file contains UTF8 symbols! You MUST use a proper text editor like Notepad++ to edit this file!
+# If you use some kind of "online editor", your file will break and reset to the default values!
+
+#############################
+#####    Permissions    #####
+#############################
+
+# The following permissions are available:
+#
+# angelchest.use             Spawns AngelChest on death instead of dropping the items
+# angelchest.protect         The AngelChest is locked for other players
+# angelchest.protect.ignore  Players can open other player's locked AngelChests
+# angelchest.fetch           Allows the player to teleport their chests to them
+# angelchest.tp              The player can teleport to their AngelChests
+# angelchest.reload          Allows reloading the config using /acreload
+# angelchest.debug           Allows to use the debug command /acdebug
+# angelchest.version         Allows to use the version command /acversion
+
+#############################
+#####     Commands      #####
+#############################
+
+# The following commands are available:
+#
+# /acgui                     Permission: angelchest.use
+#                            Opens the AngelChest GUI, listing all your AngelChests with buttons for teleporting to,
+#                            fetching and unlocking each chest
+#
+# /aclist                    Permission: angelchest.use
+#                            Shows a list of your AngelChests, including links for teleporting to, fetching and
+#                            unlocking each chest. This is basically the "chat-only" version of /acgui
+#
+# /acfetch [chestID]         Permission: angelchest.fetch
+#                            Teleports one of the chests to the player
+#
+# /actp [chestID]            Permission: angelchest.tp
+#                            Teleports the player to one of their chest
+#
+# /acunlock [chestID]        Permission: angelchest.protect
+#                            Unlocks one of your AngelChests if you have the angelchest.protect permission
+#
+# /acreload                  Permission: angelchest.reload
+#                            Reloads the config
+#
+# /acdebug                   Permission: angelchest.debug
+#                            Main debug command. Enter /acdebug for more information
+#
+# /acversion                 Permission: angelchest.version
+#                            Prints plugin version, whether you have the Plus version and what server software
+#                            you are using.
+
+############################
+##### General settings #####
+############################
+
+# After this amount of seconds, the AngelChest is automatically destroyed
+# and drops its contents. Use 0 for infinite duration.
+# You can override this for certain players by setting up groups and
+# giving players the angelchest.group.<groupname> permission. See
+# groups.example.yml for more information.
+# Default is 600 seconds = 10 minutes
+angelchest-duration: 1800
+
+# If players have their chests protected (angelchest.protect permission),
+# you can define a duration in seconds to automatically unlock the chests.
+# Use 0 to never automatically unlock chests.
+# You can override this for certain players by setting up groups and
+# giving players the angelchest.group.<groupname> permission. See
+# groups.example.yml for more information.
+# Default is 0 = never
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+unlock-duration: 0
+
+# Global chance for spawning an AngelChest
+# 1.0 = 100%, 0.5 = 50%, 0.01 = 1%
+# Example: setting this to 1.0 will always spawn a chest, setting it to
+# 0.5 will only spawn it with a probability of 50%
+# You can override this for certain players by setting up groups and
+# giving players the angelchest.group.<groupname> permission. See
+# groups.example.yml for more information.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+spawn-chance: 1.0
+
+# The maximum amount of AngelChests a player may have at the same time.
+# If a player dies again so that they would exceed this number, the
+# first created AngelChest is destroyed and drops its contents.
+# You can override this for certain players by setting up groups
+# and giving players the angelchest.group.<groupname> permission.
+# See groups.example.yml for more information.
+max-allowed-angelchests: 5
+
+# You can disable spawning the AngelChest when a player has been killed by
+# another player. By default, the AngelChest will always spawn.
+allow-angelchest-in-pvp: true
+
+# When set to true, AngelChests created by players who died in PVP will not
+# be protected from other players.
+dont-protect-chest-if-player-died-in-pvp: false
+
+# When true, the XP (see "xp-percentage" below) is collected, too.
+# When false, XP drops normally
+# When set to "nopvp", the XP is not collected if the player died during PvP.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus! (Always stores XP)
+collect-xp: true
+
+# Amount of XP the player keeps within their chest on death.
+# 1.0 = 100%, 0.5 = 50%, etc.
+# When set to 0, all XP is lost.
+# When set to -1, use vanilla amount
+# You can override this for certain players by setting up groups
+# and giving players the angelchest.group.<groupname> permission.
+# See groups.example.yml for more information.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus! (Free version always uses vanilla amount)
+xp-percentage: -1
+
+# When set to true, players will receive a message telling them where the AngelChest
+# is located.
+show-location: true
+
+# Whether to show a message to the AngelChest owner when other players open or empty their chest
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+show-message-when-other-player-opens-angelchest: true
+show-message-when-other-player-empties-angelchest: true
+
+# When true, dead players will automatically get the AngelChest GUI opened after
+# they respawn if they have at least one AngelChest.
+# Possible values:
+# true    - Opens the main GUI showing all AngelChests or the latest if you only have one
+# latest  - Opens the GUI showing the latest AngelChest only
+# false   - Do not open the GUI automatically
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+show-gui-after-death: false
+
+# When "show-gui-after-death" is enabled ("latest" or "true"), only show the GUI if the
+# player has access to either teleport or fetch the chest. If not, do not open the GUI
+only-show-gui-after-death-if-player-can-tp-or-fetch: true
+
+# You can choose the Material to use for the AngelChest,
+# e.g. CHEST, ENDER_CHEST, OBSIDIAN, ...
+# When using PLAYER_HEAD, you can use the head of the died
+# player or any other custom skull (see option below)
+# Tip: SOUL_CAMPFIRE looks awesome (1.16+ only)
+material: CHEST
+
+# You can choose another Material to use for unlocked
+# AngelChests.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+use-different-material-when-unlocked: false
+material-unlocked: ENDER_CHEST
+
+# When set to true and material is set to PLAYER_HEAD,
+# AngelChest will use the player's head for the chest.
+# When set to false, you can define a custom head
+# via its base64 value (see option below)
+head-uses-player-name: true
+
+# You can also use a custom PLAYER_HEAD texture by using
+# its base64 value. For example, you can go to
+# https://minecraft-heads.com/custom-heads
+# and choose any head, then copy the "value" (at the
+# very bottom of the page) and paste it here.
+custom-head-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIxN2M1YTk5ZTg1ODE4NDgyY2Q2YzBjNzFiN2VmOTRhY2VkYjZiOGUxZDg5NDRhZGY5MWU1MWU1MDg2NTY2ZiJ9fX0="
+
+# When true, AngelChest will spawn the chest at the last location where a player was standing
+# before he died in the void. When false, the chest will spawn at Y=1
+void-detection: true
+
+# When false, AngelChests will not be spawned for players who died in lava
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+allow-chest-in-lava: true
+
+# When false, AngelChests will not be spawned for players who died in the void
+# NOTE: The vanilla /kill command will cause void damage, so when you set this to
+# false, using /kill or /minecraft:kill will prevent the AngelChest from spawning
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+allow-chest-in-void: true
+
+# You probably don't want your AngelChest to spawn on blocks like GRASS_PATH, FARMLAND, etc.
+# as that would destroy those blocks. You can blacklist them here so AngelChest searches
+# for a spot nearby.
+dont-spawn-on:
+- FARMLAND
+- GRASS_PATH
+- LAVA
+
+# You can specify inside which existing blocks the AngelChest may spawn. If the block where
+# the player died is not in this list, AngelChest searches for a spot nearby.
+only-spawn-in:
+- AIR
+- WATER
+
+# When the block where the player died doesn't match "dont-spawn-on" and "only-spawn-in"
+# we will search for another block inside max-radius. Default is 10 blocks.
+# If there is absolutely no free space inside this radius, the chest
+# is spawned exactly where the player died and may replace an existing block, so
+# do not set this value too low.
+max-radius: 10
+
+# When absolutely no block inside "max-radius" is found, and the block where the player
+# died is bedrock, we can search for another block to replace instead of bedrock.
+never-replace-bedrock: true
+
+# Remove curse of vanishing / curse of binding items from the chest?
+remove-curse-of-vanishing: true
+remove-curse-of-binding: true
+
+# When true, totems of undying will work in every inventory slot
+# When false, they only work in the hand/off-hand slot (vanilla default)
+totem-of-undying-works-everywhere: true
+
+# When enabled, AngelChest will handle player respawns. They will be automatically respawned after death once
+# the delay (see option below) has expired
+auto-respawn: false
+
+# When auto-respawn is true, you can define a delay in seconds before the player is respawned.
+auto-respawn-delay: 10
+
+# When true, AngelChest loads all chunks asynchronously to avoid lags when players are teleporting
+# to one of their chests. This only works on Paper and its forks, but you do NOT have to disable
+# this if you do not use Paper. On very slow servers, users could experience a small pause
+# between starting the teleport and actually being teleported when this is enabled. This is NO lag,
+# it's just AngelChest waiting for the server to load the chunks instead of "force loading" them.
+# If you don't know what this means: just leave it enabled
+async-chunk-loading: true
+
+# Should we check for updates?
+# When enabled, a message is printed in the console if a new version has
+# been found, and OPs will be notified when they join the server.
+# When set to true, we will check for updates on startup and every X hours
+# When set to on-startup, we will only check on startup
+# When set to false, don't check for updates
+check-for-updates: true
+
+# When check-for-updates is true, AngelChest will check every X hours
+check-interval: 4
+
+#########################
+####     Economy     ####
+#########################
+
+# You can setup a certain price for some actions. This will only work if you
+# use Vault and a supported economy plugin.
+# If you need more options to adjust the prices for certain actions, please
+# leave a message in the SpigotMC discussion or open an issue at GitHub.
+# If you request a feature in the review section, it will probably be ignored.
+# You can also adjust those prices individually for each group. See groups.example.yml
+# You can also add the letter "p" to the end of the number to use percentages.
+# E.g. when using "0.2p", a user has to pay 20% of his account balance.
+
+# How much does it cost to spawn the AngelChest? The amount will automatically
+# be taken from the player on death if they have enough money, otherwise
+# the chest will not spawn and the items drop normally
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+price: 0
+
+# You can refund the price when a player does not to open their AngelChest
+# before it expires
+refund-expired-chests: false
+
+# How much does it cost for a player to open a chest? Each player will only be
+# charged once per chest.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+price-open: 0
+
+# How much does it cost to teleport yourself to one of your AngelChests?
+price-teleport: 0
+
+# How much does it cost to teleport your AngelChests to you?
+# I suggest you make this cheaper than "price-teleport" because teleporting to
+# your death location is probably more useful than just getting your stuff back.
+price-fetch: 0
+
+# When set to true, players must confirm teleporting to or fetching a chest if you set a price for those actions
+# by entering the same command again or by clicking on a text message in the chat
+confirm: true
+
+#########################
+#### Disabled items  ####
+#########################
+
+# Some plugins have items that you automatically get back after death. To
+# avoid those from being duplicated, you can just enter their material
+# type here. Future versions will also allow to filter for items by
+# lore or custom name and more 3rd party plugins hooks
+
+# When using AngelChestPlus, you can instead use the blacklist.yml file
+# to filter items according to material, name and lore!
+
+# Example:
+
+# disabled-materials:
+# - WOODEN_HOE
+# - COMPASS
+
+disabled-materials:
+
+#########################
+#### Disabled worlds ####
+#########################
+
+# You can disable AngelChest for certain worlds. Each world's name has to
+# be on a separate line, starting with a hyphen and followed by a space
+
+# Example:
+#
+# disabled-worlds:
+# - world_nether
+# - world_the_end
+
+disabled-worlds:
+
+##########################
+#### Disabled regions ####
+##########################
+
+# You can disable AngelChest for certain WorldGuard region. Each region's name has to
+# be on a separate line, starting with a hyphen and followed by a space
+
+# Example:
+#
+# disabled-worldguard-regions:
+# - spawn
+# - pvparena
+
+disabled-worldguard-regions:
+
+# If, for some reason, you get errors using WorldGuard and AngelChest together, you can
+# disable the WorldGuard integration, but this will also mean you cannot disable
+# AngelChest in certain regions. If you get errors, please open an issue at github
+# or join our discord: https://discord.jeff-media.de
+disable-worldguard-integration: false
+
+#########################
+## Protection plugins  ##
+#########################
+
+# AngelChest can check if a player has permissions to place blocks where he died. If
+# the player is prohibited from placing blocks there, AngelChest will not spawn a
+# chest if the following option is set to true.
+only-spawn-chests-if-player-may-build: false
+
+#########################
+##    Other plugins    ##
+#########################
+
+# AngelChest can hook into certain 3rd party plugins to improve the chest
+# generation. None of those plugins is required, and you do NOT have to
+# disable the integration if a certain plugin is not installed.
+
+# When you have Slimefun installed, AngelChest can check for "Soulbound" items
+# and prevent those from being put into the chest.
+use-slimefun: true
+
+# There are many other plugins adding "Soulbound" items. AngelChest can try
+# to detect those as well and prevent those from being put into the chest.
+check-generic-soulbound: true
+
+# Some plugins make you keep your items on death, e.g. Essentials when you are /op.
+# AngelChest respects that, but you also set the following option to true to always
+# get a chest, regardless of the keepInventory flag.
+# Note that many plugins (including EssentialsX) also clear your drops list for
+# totally retarded reasons, because that's not needed and prevents AngelChest
+# from detecting the drops. If you get the message that your inventory was empty
+# on death, try setting the "event-priority" below to LOWEST, then raise it slowly
+# to the highest possible value where it still works.
+ignore-keep-inventory: false
+
+# You can define the priority on which AngelChest detects the player's drops. When you use plugins to
+# manipulate what items a player drops on death, consider setting this to a high value (e.g. HIGHEST
+# or MONITOR.
+# If you experience problems with some items not being put into the chest but being dropped next to it,
+# try to lower the priority of AngelChest until the drops get detected.
+# If you have problems with the chest not spawning at all (but remaining in the player's inventory),
+# consider using a low priority (e.g. LOWEST)
+# Available priorities (from high to low): MONITOR, HIGHEST, HIGH, NORMAL, LOW, LOWEST
+event-priority: NORMAL
+
+#########################
+##### Localization ######
+#########################
+
+# In the following configuration sections, you can use color and
+# formatting codes for all text messages.
+
+# Available color codes:
+# &0 Black        &6 Gold       &c Red
+# &1 Dark Blue    &7 Gray       &d Light Purple
+# &2 Dark Green   &8 Dark Gray  &e Yellow
+# &3 Dark Aqua    &9 Blue       &f White
+# &4 Dark Red     &a Green
+# &5 Dark Purple  &b Aqua
+
+# Available formatting codes:
+# &k Obfuscated   &m Strikethrough
+# &l Bold         &o Italic
+# &n Underline    &r Reset
+
+#########################
+#####   Hologram   ######
+#########################
+
+# {player} is the player's name.
+# {time} is the amount of time left.
+# {deathcause} is the name of the killing player or the death cause (LAVA, VOID, ...)
+# {protected} shows the protection status. You can define its value below.
+# \n is a new line.
+# The hologram text also allows you to use PlacerholderAPI placeholders
+# Use an empty string to disable the hologram.
+hologram-text: "&a&l[AngelChest]&r\n&b%s"
+
+# This text is added to the hologram where you have {protected} in your "hologram-text"
+# and if your AngelChest is protected and auto unlocking is disabled.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+hologram-protected-text: "&cProtected"
+
+# This text is added to the hologram where you have {protected} in your "hologram-text"
+# and if your AngelChest is protected and auto unlocking is enabled.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+hologram-protected-countdown-text: "&cProtected for {time}"
+
+# This text is added to the hologram where you have {protected} in your "hologram-text"
+# and if your AngelChest is unprotected.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+hologram-unprotected-text: "&aUnprotected"
+
+# If you think the hologram is displayed too high, you can change this number.
+# For example -0.5 means the hologram will be moved 0.5 blocks down
+hologram-offset: 0.0
+
+# The distance between each hologram line
+hologram-offset-per-line: 0.25
+
+#########################
+#####     GUI      ######
+#########################
+
+# PREMIUM FEATURE: THE WHOLE GUI IS ONLY AVAILABLE IN AngelChestPlus!
+
+# You can use base64 strings to customize the GUI buttons.
+# You can for example use this website: https://minecraft-heads.com/custom-heads
+# At the bottom of each head's page, copy the string at Other -> Value
+gui-button-back: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY0Zjc3OWE4ZTNmZmEyMzExNDNmYTY5Yjk2YjE0ZWUzNWMxNmQ2NjllMTljNzVmZDFhN2RhNGJmMzA2YyJ9fX0="
+gui-button-teleport: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGZlYjM5ZDcxZWY4ZTZhNDI2NDY1OTMzOTNhNTc1M2NlMjZhMWJlZTI3YTBjYThhMzJjYjYzN2IxZmZhZSJ9fX0="
+gui-button-fetch: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGZlYjM5ZDcxZWY4ZTZhNDI2NDY1OTMzOTNhNTc1M2NlMjZhMWJlZTI3YTBjYThhMzJjYjYzN2IxZmZhZSJ9fX0="
+gui-button-unlock: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGFkOTQzZDA2MzM0N2Y5NWFiOWU5ZmE3NTc5MmRhODRlYzY2NWViZDIyYjA1MGJkYmE1MTlmZjdkYTYxZGIifX19"
+gui-button-confirm-info: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZlNTIyZDkxODI1MjE0OWU2ZWRlMmVkZjNmZTBmMmMyYzU4ZmVlNmFjMTFjYjg4YzYxNzIwNzIxOGFlNDU5NSJ9fX0="
+gui-button-confirm-accept: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2UyYTUzMGY0MjcyNmZhN2EzMWVmYWI4ZTQzZGFkZWUxODg5MzdjZjgyNGFmODhlYThlNGM5M2E0OWM1NzI5NCJ9fX0="
+gui-button-confirm-decline: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0="
+
+##### Inventory title in the GUI main menu
+gui-title-main: "&4&l[&c&lAngelChest&4&l]"
+
+##### Inventory title in GUI after selecting a specific chest
+# {id} is the number of the chest
+# {time} is the amount of time left
+gui-title-chest: "&4&l[&c&lAngelChest&4&l] &c#{id} &4| &c{time}"
+
+##### Chest inventory name
+# {player} is the player's name.
+angelchest-inventory-name: "&a[AngelChest] &b%s&r"
+
+##### Button names and lore
+gui-back: "&6Back"
+gui-info: "&6Info"
+gui-info-lore: "§6You are about to spend {price}{currency}."
+gui-teleport: "&6Teleport"
+gui-fetch: "&6Fetch"
+gui-unlock: "&6Unlock"
+gui-accept: "&aAccept"
+gui-decline: "&cDecline"
+gui-preview: "&6Preview"
+
+#########################
+#####    Other     ######
+#########################
+
+##### AngelChest list (/aclist) settings
+# {id} is the number of the chest
+# {x} {y} {z} are the coordinates
+# {world} is the name of the world
+# {time} is the amount of time left
+# \n is a new line.
+angelchest-list: "[{id}] {time} &aX:&f {x} &aY:&f {y} &aZ:&f {z} | {world} "
+
+##### Clickable Links when running /acinfo or /aclist
+link-unlock: "&5[Unlock]&r"
+link-fetch: "&6[Fetch]&r"
+link-teleport: "&6[TP]&r"
+
+# When set to true, the links in the chat for teleportation, fetching or unlocking
+# an AngelChest will be sent on a separate line
+show-links-on-separate-line: false
+
+# Whether AngelChest should automatically prefix all messages
+add-prefix: true
+prefix: "&b[&aAngelChest&b] &r"
+
+############################
+##### Command settings #####
+############################
+
+# You can change the command aliases for all player commands here.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+
+# Commands that can be used instead of /acgui
+command-aliases-acgui:
+- ac
+- angelchest
+- angelchests
+- angelchestgui
+
+# Commands that can be used instead of /aclist
+command-aliases-aclist:
+- acinfo
+- angelchestinfo
+- angelchestlist
+
+# Commands that can be used instead of /acfetch
+command-aliases-acfetch:
+- acretrieve
+- angelchestretrieve
+- angelchestfetch
+
+# Commands that can be used instead of /actp
+command-aliases-actp:
+- acteleport
+- angelchesttp
+- angelchestteleport
+
+# Commands that can be used instead of /acunlock
+command-aliases-acunlock:
+- angelchestunlock
+- unlockchest
+- unlock
+
+# Commands that can be used instead of /acreload
+command-aliases-acreload:
+- angelchestreload
+
+#########################
+#####     Misc      #####
+#########################
+
+# Whether to show a console message when a player opens an AngelChest
+console-message-on-open: false
+
+# Log all created AngelChests, including content, death location, death cause, death time and player' inventory content.
+# Also logs what items have been put into the chest and when a chest has been emptied.
+# Note: Taking out single items from the chest is currently NOT logged! That will be added in the future.
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChestPlus!
+log-angelchests: false
+
+# The amount of hours until log files are removed again. Set to -1 to never remove the log files
+purge-logs-older-than-x-hours: 48
+
+# The amount of hours inbetween each attempt to remove old log files. Set to -1 to only remove on startup
+purge-logs-every-x-hours: 1
+
+# File names for the log files. Available placerholders:
+# {player}  - Player's name
+# {uuid}    - Player's UUID
+# {world}   - World nane
+# {date}    - Date and time
+log-filename: "{player}_{world}_{date}.log"
+
+# File names for the AngelChest files. Available placerholders:
+# {player}       - Player's name
+# {uuid}         - Player's UUID
+# {world}        - World nane
+# {x}, {y}, {z}  - Coordinates
+chest-filename: "{player}_{world}_{x}_{y}_{z}.yml"
+
+#########################
+#####   Messages   ######
+#########################
+
+message-all-your-angelchests-were-already-unlocked: "&eAll your AngelChests were already unlocked."
+message-angelchest-created: "&aAn Angel collected your stuff and put it into a chest located at the place of your death."
+message-angelchest-disappeared: "&cYou were too slow... Your AngelChest has disappeared and dropped its contents."
+message-error-players-only: "&cError: This command can only be run by players."
+message-inventory-was-empty: "&eAn Angel searched for your stuff but could not find anything."
+message-not-allowed-to-break-other-angelchests: "&cYou are not allowed to break other people's AngelChest."
+message-not-allowed-to-open-other-angelchests: "&cYou are not allowed to open other people's AngelChest."
+message-unlocked-more-angelchests: "&aYou have unlocked %d AngelChests."
+message-unlocked-one-angelchest: "&aYou have unlocked your AngelChest."
+message-you-dont-have-any-angelchests: "&eYou don't have any AngelChests."
+message-you-got-part-of-your-inventory-back: "&eYou got a part of your inventory back, but some items are still in the AngelChest."
+message-you-got-your-inventory-back: "&aYou got your inventory back!"
+message-angelchest-location: "&eLocations of your AngelChests:"
+message-not-enough-money: "&cYou don't have enough money."
+message-not-enough-money2: "&cAn Angel tried to collect your stuff but you didn't have enough money."
+message-please-select-chest: "&7Please specify which AngelChest you would like to select."
+message-already-unlocked: "&cThis AngelChest is already unlocked."
+message-too-many-angelchests: "&cYou had more AngelChests than your Angel could handle... Your oldest AngelChest has exploded."
+message-no-angelchest-in-pvp: "&cAn Angel tried to collect your stuff but was put to flight by the presence of your killer."
+message-angelchest-retrieved: "&aAngelChest retrieved!"
+message-confirm: "&6You are about to spend {price}{currency}. Click this message to continue."
+message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
+message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
+message-angelchest-opened: "&6{player} has opened your AngelChest."
+message-angelchest-emptied: "&c{player} has emptied your AngelChest."
+message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+#########################
+##### Translations ######
+#########################
+
+# Here are some community made translations - to use one, just uncomment them by removing the
+# single hashtag (#) symbol at the beginning of each line. Do NOT uncomment the name of the language.
+# Of course you can also edit the translations.
+
+##### English
+#message-all-your-angelchests-were-already-unlocked: "&eAll your AngelChests were already unlocked."
+#message-angelchest-created: "&aAn Angel collected your stuff and put it into a chest located at the place of your death."
+#message-angelchest-disappeared: "&cYou were too slow... Your AngelChest has disappeared and dropped its contents."
+#message-error-players-only: "&cError: This command can only be severe by players."
+#message-inventory-was-empty: "&eAn Angel searched for your stuff but could not find anything."
+#message-not-allowed-to-break-other-angelchests: "&cYou are not allowed to break other people's AngelChest."
+#message-not-allowed-to-open-other-angelchests: "&cYou are not allowed to open other people's AngelChest."
+#message-unlocked-more-angelchests: "&aYou have unlocked %d AngelChests."
+#message-unlocked-one-angelchest: "&aYou have unlocked your AngelChest."
+#message-you-dont-have-any-angelchests: "&eYou don't have any AngelChests."
+#message-you-got-part-of-your-inventory-back: "&eYou got a part of your inventory back, but some items are still in the AngelChest."
+#message-you-got-your-inventory-back: "&aYou got your inventory back!"
+#message-angelchest-location: "&eLocations of your AngelChests:"
+#message-not-enough-money: "&cYou don't have enough money."
+#message-not-enough-money2: "&cAn Angel tried to collect your stuff but you didn't have enough money."
+#message-please-select-chest: "&7Please specify which AngelChest you would like to select."
+#message-already-unlocked: "&cThis AngelChest is already unlocked."
+#message-too-many-angelchests: "&cYou had more AngelChests than your Angel could handle... Your oldest AngelChest has exploded."
+#message-no-angelchest-in-pvp: "&cAn Angel tried to collect your stuff but was put to flight by the presence of your killer."
+#message-angelchest-retrieved: "&aAngelChest retrieved!"
+#message-confirm: "&6You are about to spend {price}{currency}. Click this message to continue."
+#message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
+#message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
+#message-angelchest-opened: "&6{player} has opened your AngelChest."
+#message-angelchest-emptied: "&c{player} has emptied your AngelChest."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+#Azerbaijan Turkish
+#message-all-your-angelchests-were-already-unlocked: "&eBütün AngelChest'lərinin kilidi onsuzda açıqdır."
+#message-angelchest-created: "&aBir mələk əşyalarını topladı və öldüyün yerdəki bir sandığa qoydu."
+#message-angelchest-disappeared: "&cÇox yavaş idin... AngelChest'in yox oldu və içindəkiləri yerə buraxdı."
+#message-error-players-only: "&cHata: Bu funksiya sadəcə oyunçular tərəfindən istifadə edilə bilər."
+#message-inventory-was-empty: "&eBir mələk əşyalarını axtardı lakin heçbir şey tapa bilmədi."
+#message-not-allowed-to-break-other-angelchests: "&cDigər oyunçuların AngelChest'ini qırmaq üçün icazən yoxdur."
+#message-not-allowed-to-open-other-angelchests: "&cDigər oyunçuların AngelChest'ini açmaq üçün icazən yoxdur"
+#message-unlocked-more-angelchests: "&a %d AngelChests'lərinin kilidini açdın."
+#message-unlocked-one-angelchest: "&aÖz AngelChest'inin kilidini açdın."
+#message-you-dont-have-any-angelchests: "&eHeç AngelChest'e sahip deyilsən."
+#message-you-got-part-of-your-inventory-back: "&eEnvanterinin bir parçasını əlde ettin, Amma bəzi əşyaların hələ AngelChest'dədir."
+#message-you-got-your-inventory-back: "&aEnvanterinə geri aldın!"
+#message-angelchest-location: "&eAngelChest'lərinin olduğu yer:"
+#message-not-enough-money: "&cKifayət qədər pulun yoxdur."
+#message-not-enough-money2: "&cBir mələk əşyalarını toplamağa cəhd etdi, ancaq kifayət qədər pulunuz yox idi."
+#message-already-unlocked: "&cBu AngelChest'in kilidi hal-hazırda açıqdır."
+#message-too-many-angelchests: "&cSahip olabiləcəyinizdən daha artıq AngelChest'in var... Ən köhnə AngelChest'in məhv edildi."
+#message-no-angelchest-in-pvp: "&cBir mələk əşyalarını toplamağa cəhd etdi, ancaq qətiliniz tərəfindən dayandırıldı."
+#message-angelchest-retrieved: "&aAngelChest yanınıza çağırıldı!"
+#message-confirm: "&6{price}{currency} xərcləmək üzərəsən. Davam etmək üçün mesaja toxun."
+#message-paid-open: "&8Bir AngelChest açmaq üçün {price}{currency} xərclədin."
+#message-unlocked-automatically: "&8AngelChest'inin kilidi avtomatik olaraq açıldı"
+#message-angelchest-opened: "&6{player} adlı oyunçu sənin AngelChest'ini açdı."
+#message-angelchest-emptied: "&c{player} adlı oyunçu sənin AngelChest'ini boşaltdı."
+#message-spawn-chance-unsuccessful: "&cMələk əşyalarını toplamağı unutdu, şanssızlıq!" 
+
+##### Chinese Simplified 简体中文 - Thanks to qsefthuopq for translating! -> https://www.spigotmc.org/members/qsefthuopq.339953/
+#message-all-your-angelchests-were-already-unlocked: "&e你所有的天御之箱都已解锁."
+#message-angelchest-created: "&a一位善良的天使捡起了你的物品并放到了你死亡地点附近的箱子内."
+#message-angelchest-disappeared: "&c你来晚了... 你的天御之箱消失且物品掉到了地上."
+#message-error-players-only: "&c错误: 这个指令只能由玩家执行."
+#message-inventory-was-empty: "&e天使并没有找到你掉落的物品."
+#message-not-allowed-to-break-other-angelchests: "&c你不能破坏其它玩家的天御之箱."
+#message-not-allowed-to-open-other-angelchests: "&c你不能打开其它玩家的天御之箱."
+#message-unlocked-more-angelchests: "&a你解锁了%d 的天御之箱."
+#message-unlocked-one-angelchest: "&a你解锁了你的的天御之箱."
+#message-you-dont-have-any-angelchests: "&e你没有任何的天御之箱."
+#message-you-got-part-of-your-inventory-back: "&e你取回了一些物品,但还有一些物品在天御之箱内."
+#message-you-got-your-inventory-back: "&a你成功地取回了你的物品!"
+#message-angelchest-location: "&e你的天御之箱的位置:"
+#message-not-enough-money: "&c你没有足够的金钱."
+#message-not-enough-money2: "&cAn Angel tried to collect your stuff but you didn't have enough money."
+#message-please-select-chest: "&7请指定你要选择的天御之箱."
+#message-already-unlocked: "&cThis AngelChest is already unlocked."
+#message-too-many-angelchests: "&cYou had more AngelChests than your Angel could handle... Your oldest AngelChest has exploded."
+#message-no-angelchest-in-pvp: "&cAn Angel tried to collect your stuff but was put to flight by the presence of your killer."
+#message-angelchest-retrieved: "&aAngelChest retrieved!"
+#message-confirm: "&6You are about to spend {price}{currency}. Click this message to continue."
+#message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
+#message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
+#message-angelchest-opened: "&6{player} has opened your AngelChest."
+#message-angelchest-emptied: "&c{player} has emptied your AngelChest."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### Chinese Traditional 繁體中文 - Thanks to maoding for translating! -> https://www.spigotmc.org/members/maoding.400505/
+#message-all-your-angelchests-were-already-unlocked: "&e所有的小天使箱子已被解鎖"
+#message-angelchest-created: "&a一個善良的小天使幫你把所有的掉落物蒐集起來了，並放置在您死亡的地點"
+#message-angelchest-disappeared: "&c你晚了一步... 小天使箱子已經消失，你的物品也掉了出來"
+#message-error-players-only: "&c錯誤： 該指令只能由玩家使用"
+#message-inventory-was-empty: "&e小天使發現你在死亡時未掉落任何物品"
+#message-not-allowed-to-break-other-angelchests: "&c你無法破壞其他人的小天使箱子!"
+#message-not-allowed-to-open-other-angelchests: "&c你無法使用其他人的小天使箱子!"
+#message-unlocked-more-angelchests: "&a成功解鎖 %d個 小天使箱子"
+#message-unlocked-one-angelchest: "&a成功將你的小天使箱子解鎖了"
+#message-you-dont-have-any-angelchests: "&e你沒有任何小天使箱子"
+#message-you-got-part-of-your-inventory-back: "&e你取回了一部分的物品，但仍有物品遺留在小天使箱子裡"
+#message-you-got-your-inventory-back: "&a成功將物品取回!"
+#message-angelchest-location: "&e你的小天使箱子的位置:"
+#message-not-enough-money: "&c你沒有足夠的金錢."
+#message-not-enough-money2: "&cAn Angel tried to collect your stuff but you didn't have enough money."
+#message-please-select-chest: "&7請指定你要選擇的小天使箱子."
+#message-already-unlocked: "&cThis AngelChest is already unlocked."
+#message-too-many-angelchests: "&cYou had more AngelChests than your Angel could handle... Your oldest AngelChest has exploded."
+#message-no-angelchest-in-pvp: "&cAn Angel tried to collect your stuff but was put to flight by the presence of your killer."
+#message-angelchest-retrieved: "&aAngelChest retrieved!"
+#message-confirm: "&6You are about to spend {price}{currency}. Click this message to continue."
+#message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
+#message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
+#message-angelchest-opened: "&6{player} has opened your AngelChest."
+#message-angelchest-emptied: "&c{player} has emptied your AngelChest."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### Dutch - Thanks to Xeyame for translating -> https://github.com/Xeyame
+#message-all-your-angelchests-were-already-unlocked: "&eAl je AngerChests zijn al ontgrendeld."
+#message-angelchest-created: "&aEen engel heeft je spullen verzameld, en het in een kist op je overledensplaats gedaan."
+#message-angelchest-disappeared: "&cJe was te langzaam, je AngerChest is verdwenen en heeft zijn inhoud laten vallen"
+#message-error-players-only: "&cError: Dit kan alleen door spelers worden gedaan."
+#message-inventory-was-empty: "&eEen engel heeft voor je spullen gezocht, maar kon niks vinden."
+#message-not-allowed-to-break-other-angelchests: "&cJe mag de AngelChest van andere mensen niet breken."
+#message-not-allowed-to-open-other-angelchests: "&cJe mag de AngelChest van andere mensen niet open maken."
+#message-unlocked-more-angelchests: "&aJe hebt %d AngelChests opengemaakt."
+#message-unlocked-one-angelchest: "&aJe hebt je AngelChest opengemaakt."
+#message-you-dont-have-any-angelchests: "&eJe hebt geen AngelChest."
+#message-you-got-part-of-your-inventory-back: "&eJe hebt een deel van je inventaris terug gekregen, maar sommige items zitten nog steeds in de AngelChest."
+#message-you-got-your-inventory-back: "&aJe hebt je inventaris terug gekregen!"
+#message-angelchest-location: "&eLocatie van je AngelChest: %s"
+#message-not-enough-money: "&cYou don't have enough money."
+#message-not-enough-money2: "&cAn Angel tried to collect your stuff but you didn't have enough money."
+#message-please-select-chest: "&7Please specify which AngelChest you would like to select."
+#message-already-unlocked: "&cThis AngelChest is already unlocked."
+#message-too-many-angelchests: "&cYou had more AngelChests than your Angel could handle... Your oldest AngelChest has exploded."
+#message-no-angelchest-in-pvp: "&cAn Angel tried to collect your stuff but was put to flight by the presence of your killer."
+#message-angelchest-retrieved: "&aAngelChest retrieved!"
+#message-confirm: "&6You are about to spend {price}{currency}. Click this message to continue."
+#message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
+#message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
+#message-angelchest-opened: "&6{player} has opened your AngelChest."
+#message-angelchest-emptied: "&c{player} has emptied your AngelChest."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### French - Thanks to AngelCynara for translating! -> https://www.spigotmc.org/members/angelcynara.398643/ 
+#message-all-your-angelchests-were-already-unlocked: "&eTout vos AngeCoffres sont débloqués."
+#message-angelchest-created: "&aUn Ange a recupéré votre stuff et l'a mis dans un coffre à l'endroit de votre mort."
+#message-angelchest-disappeared: "&cVous avez été trop lent, votre stuff a disparu."
+#message-error-players-only: "&c Erreur : Cette commande ne peut être effectué que par des joueurs."
+#message-inventory-was-empty: "&e L'Ange n'a rien trouvé dans votre inventaire au moment de votre mort."
+#message-not-allowed-to-break-other-angelchests: "&c L'Ange vous interdit de casser l' AngeCoffre d'un autre joueur."
+#message-not-allowed-to-open-other-angelchests: "&cL'Ange vous interdit d'ouvrir l'AngeCoffre d'un autre joueur."
+#message-unlocked-more-angelchests: "&aVous avez débloqué %d AngeCoffres."
+#message-unlocked-one-angelchest: "&aVous avez debloqué votre AngeCoffre."
+#message-you-dont-have-any-angelchests: "&eVous n'avez pas d'AngeCoffre."
+#message-you-got-part-of-your-inventory-back: "&eVous avez récupéré une partie de votre inventaire, mais il en reste dans l'AngeCoffre."
+#message-you-got-your-inventory-back: "&aVous avez récupéré votre inventaire."
+#message-angelchest-location: "&eEmplacement de vos AngeCoffre:"
+#message-not-enough-money: "&cTu n'as pas assez d'argent."
+#message-not-enough-money2: "&cUn ange a essayé de collecter ton stuff mais tu n'as pas assez d'argent pour lui..."
+#message-please-select-chest: "&7Tu dois spécifié quel AngeCoffre tu souhaites séléctionner."
+#message-already-unlocked: "&cCet AngeCoffre est déjà déverrouillé."
+#message-too-many-angelchests: "&cTu as atteint la limite d'AngeCoffre... Ton AngeCoffre le plus vieux à explosé."
+#message-no-angelchest-in-pvp: "&cUn ange a essayé de collecter ton stuff mais à pris peur face à ton assassin..."
+#message-angelchest-retrieved: "&aAngeCoffre récupéré !"
+#message-confirm: "&6Tu es sur le point de dépenser {price}{currency}. Clique sur ce message pour continuer."
+#message-paid-open: "&8Tu as dépensé {price}{currency} pour ouvrir cet AngeCoffre."
+#message-unlocked-automatically: "&8Tu AngeCoffre à été déverrouillé automatiquement."
+#message-angelchest-opened: "&6{player} has opened your AngelChest."
+#message-angelchest-emptied: "&c{player} has emptied your AngelChest."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### German
+#message-all-your-angelchests-were-already-unlocked: "&eAlle deine AngelChests waren bereits aufgeschlossen."
+#message-angelchest-created: "&aEin Engel hat deine Sachen eingesammelt und sie in einer Kiste am Ort deines Todes gelagert."
+#message-angelchest-disappeared: "&cDu warst zu langsam... deine AngelChest ist verschwunden hat ihren Inhalt fallen gelassen."
+#message-error-players-only: "&cFehler: Dieser Befehl kann nur von Spielern benutzt werden."
+#message-inventory-was-empty: "&eEin Engel hat nach deinen Sachen gesucht aber konnte nichts finden."
+#message-not-allowed-to-break-other-angelchests: "&cDu darfst die AngelChest von anderen Spielern nicht zerstören."
+#message-not-allowed-to-open-other-angelchests: "&cDu darfst die AngelChest von anderen Spielern nicht öffnen."
+#message-unlocked-more-angelchests: "&aDu hast %d AngelChests aufgeschlossen."
+#message-unlocked-one-angelchest: "&aDu hast deine AngelChest aufgeschlossen."
+#message-you-dont-have-any-angelchests: "&eDu hast keine AngelChest."
+#message-you-got-part-of-your-inventory-back: "&eEin Teil deines Inventars wurde wiederhergestellt, aber manche Sachen sind noch in der AngelChest."
+#message-you-got-your-inventory-back: "&aDein Inventar wurde wiederhergestellt!"
+#message-angelchest-location: "&ePositionen deiner AngelChests:"
+#message-not-enough-money: "&cDu hast nicht genug Geld."
+#message-not-enough-money2: "&cEin Engel hat versucht deine Sachen einzusammeln, aber du hattest nicht genug Geld."
+#message-please-select-chest: "&7Bitte gib an welche AngelChest du auswählen möchtest."
+#message-already-unlocked: "&cDiese AngelChest war bereits aufgeschlossen."
+#message-too-many-angelchests: "&cDu hattest mehr AngelChests als dein Engel handhaben konnte... deine älteste AngelChest ist explodiert."
+#message-no-angelchest-in-pvp: "&cEin Engel wollte deine Sachen einsammeln, doch die Anwesenheit deines Mörders trieb ihn in die Flucht."
+#message-angelchest-retrieved: "&aDeine AngelChest wurde herbeigerufen!"
+#message-confirm: "&6Diese Aktion kostet {price}{currency}. Klick auf diese Nachricht zum Bestätigen."
+#message-paid-open: "&8Du hast {price}{currency} ausgegeben um diese AngelChest zu öffnen."
+#message-unlocked-automatically: "&8Deine AngelChest wurde automatisch aufgeschlossen."
+#message-angelchest-opened: "&6{player} hat deine AngelChest geöffnet."
+#message-angelchest-emptied: "&c{player} hat deine AngelChest geleert."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### Italian
+#message-all-your-angelchests-were-already-unlocked: "&eTutte le tue AngelChests sono già state sbloccate."
+#message-angelchest-created: "&aUn Angelo ha raccolto le tue cose e le ha messe dove sei morto."
+#message-angelchest-disappeared: "&cSei stato troppo lento... La tua AngelChest è scomparsa ed il suo contenuto è stato lasciato a terra."
+#message-error-players-only: "&cErrore: Questo comando può essere eseguito solo dai giocatori."
+#message-inventory-was-empty: "&eUn Angelo ha cercato le tue cose ma non è riuscito a trovare nulla."
+#message-not-allowed-to-break-other-angelchests: "&cNon ti è consentito di rompere l'AngelChest di qualcun'altro."
+#message-not-allowed-to-open-other-angelchests: "&cNon ti è consentito di aprire l'AngelChest di qualcun'altro."
+#message-unlocked-more-angelchests: "&aHai sbloccato le tue %d AngelChests."
+#message-unlocked-one-angelchest: "&aHai sbloccato la tua AngelChest."
+#message-you-dont-have-any-angelchests: "&eNon hai nessuna AngelChests."
+#message-you-got-part-of-your-inventory-back: "&eHai ricevuto alcune delle tue cose indietro, ma ce ne sono ancora alcune nella tua AngelChest."
+#message-you-got-your-inventory-back: "&aHai ricevuto il tuo inventario!"
+#message-angelchest-location: "&eEcco dove sono le tue AngelChests:"
+#message-not-enough-money: "&cNon hai abbastanza soldi."
+#message-not-enough-money2: "&cAn Angel tried to collect your stuff but you didn't have enough money."
+#message-please-select-chest: "&7Per piacere, specifica quale AngelChest vuoi selezionare."
+#message-already-unlocked: "&cQuesta AngelChest è già stata sbloccata."
+#message-too-many-angelchests: "&cYou had more AngelChests than your Angel could handle... Your oldest AngelChest has exploded."
+#message-no-angelchest-in-pvp: "&cAn Angel tried to collect your stuff but was put to flight by the presence of your killer."
+#message-angelchest-retrieved: "&aAngelChest retrieved!"
+#message-confirm: "&6You are about to spend {price}{currency}. Click this message to continue."
+#message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
+#message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
+#message-angelchest-opened: "&6{player} has opened your AngelChest."
+#message-angelchest-emptied: "&c{player} has emptied your AngelChest."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### Polish
+#message-all-your-angelchests-were-already-unlocked: "&eWszystkie twoje AnielskieSkrzynie zostały już odblokowane."
+#message-angelchest-created: "&aAnioł zebrał twoje rzeczy i włożył je do skrzyni znajdującej się w miejscu twojej śmierci."
+#message-angelchest-disappeared: "&cByłeś zbyt wolny... Twoja AnielskaSkrzynia zniknęła i wyrzuciła zawartość."
+#message-error-players-only: "&cBłąd: Ta komenda może być wykonana wyłącznie przez graczy."
+#message-inventory-was-empty: "&eAnioł szukał twoich rzeczy, ale nic nie mogł znaleźć."
+#message-not-allowed-to-break-other-angelchests: "&cNie możesz niszczyć AnielskichSkrzyń innych graczy."
+#message-not-allowed-to-open-other-angelchests: "&cNie możesz otwierać AnielskichSkrzyń innych graczy."
+#message-unlocked-more-angelchests: "&aOdblokowałeś %d Anielskie(ich)Skrzyń(ie)."
+#message-unlocked-one-angelchest: "&aOdblokowałeś AnielskąSkrzynię."
+#message-you-dont-have-any-angelchests: "&eNie masz żadnej AnielskiejSkrzyni."
+#message-you-got-part-of-your-inventory-back: "&eOdzyskałeś część ekwipunku, ale niektóre przedmioty wciąż znajdują się w AnielskiejSkrzyni."
+#message-you-got-your-inventory-back: "&aOdzyskałeś swój ekwipunek!"
+#message-angelchest-location: "&eLokalizacja Twojej AnielskiejSkrzyni:"
+#message-not-enough-money: "&cNie masz wystarczająco pieniędzy."
+#message-not-enough-money2: "&cAn Anioł chciał zebrać twoje rzeczy, ale nie miałeś wystarczająco pieniędzy."
+#message-please-select-chest: "&7Określ, którą AnielskąSkrzynię chciałbyś wybrać."
+#message-already-unlocked: "&cTa AnielskaSkrzynia jest już odblokowana."
+#message-too-many-angelchests: "&cMiałeś więcej AnielskichSkrzyń, niż twój anioł mógł znieść... Twoja najstarsza AnielskaSkrzynia eksplodowała."
+#message-no-angelchest-in-pvp: "&cAnioł próbował zebrać twoje rzeczy, ale został zmuszony do ucieczki przez obecność twojego zabójcy."
+#message-angelchest-retrieved: "&aAnielskaSkrzynia odzyskana!"
+#message-confirm: "&6Zaraz wydasz {price}{currency}. Kliknij w tą wiadomość aby kontynuować."
+#message-paid-open: "&8Wydałeś {price}{currency} żeby otworzyć AnielskąSkrzynie."
+#message-unlocked-automatically: "&8Twoja AnielskaSkrzynia została automatycznie odblokowana."
+#message-angelchest-opened: "&6{player} otworzył twoją AnielskąSkrzynie."
+#message-angelchest-emptied: "&c{player} opróżnił twoją AnielskąSkrzynie."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### Portuguese
+#message-all-your-angelchests-were-already-unlocked: "&eTodos os seus AngelChests estavam desbloqueados."
+#message-angelchest-created: "&aUm anjo coletou seus itens e os guardou dentro de um baú no local de sua morte."
+#message-angelchest-disappeared: "&cVocê foi muito lento... Seu AngelChest desapareceu e jogou seus itens no chão."
+#message-error-players-only: "&cErro: Esse comando só funciona com jogadores."
+#message-inventory-was-empty: "&eUm anjo procurou por suas coisas, mas não encontrou nada."
+#message-not-allowed-to-break-other-angelchests: "&cVocê não tem permissão para quebrar o AngelChest de outras pessoas."
+#message-not-allowed-to-open-other-angelchests: "&cVocê não tem permissão para abrir o AngelChest de outras pessoas."
+#message-unlocked-more-angelchests: "&aVocê abriu o AngelChest de %d."
+#message-unlocked-one-angelchest: "&aVocê abriu o seu AngelChest."
+#message-you-dont-have-any-angelchests: "&eVocê não tem nenhum AngelChest."
+#message-you-got-part-of-your-inventory-back: "&eVocê conseguiu uma parte do seu inventário de volta, mas alguns itens ainda estão no AngelChest."
+#message-you-got-your-inventory-back: "&aVocê recuperou seu inventário!"
+#message-angelchest-location: "&eLocal do seu AngelChest:"
+#message-not-enough-money: "&cYou don't have enough money."
+#message-not-enough-money2: "&cAn Angel tried to collect your stuff but you didn't have enough money."
+#message-please-select-chest: "&7Please specify which AngelChest you would like to select."
+#message-already-unlocked: "&cThis AngelChest is already unlocked."
+#message-too-many-angelchests: "&cYou had more AngelChests than your Angel could handle... Your oldest AngelChest has exploded."
+#message-no-angelchest-in-pvp: "&cAn Angel tried to collect your stuff but was put to flight by the presence of your killer."
+#message-angelchest-retrieved: "&aAngelChest retrieved!"
+#message-confirm: "&6You are about to spend {price}{currency}. Click this message to continue."
+#message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
+#message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
+#message-angelchest-opened: "&6{player} has opened your AngelChest."
+#message-angelchest-emptied: "&c{player} has emptied your AngelChest."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### Russian - Thanks to @GEEK for translating
+#message-all-your-angelchests-were-already-unlocked: "&eВсе ваши Ангельские сундуки разблокированы."
+#message-angelchest-created: "&aАнгел собрал ваши вещи и положил в сундук на месте вашей смерти."
+#message-angelchest-disappeared: "&cВы слишком медленны... Ваш Ангельский сундук исчез и выбросил все вещи."
+#message-error-players-only: "&cОшибка: эта команда может быть выполнена только игроками."
+#message-inventory-was-empty: "&eАнгел искал ваши вещи, но ничего не нашел."
+#message-not-allowed-to-break-other-angelchests: "&cВам не разрешено ломать Ангельский сундук других игроков."
+#message-not-allowed-to-open-other-angelchests: "&cВам не разрешено открывать Ангельский сундук других игроков."
+#message-unlocked-more-angelchests: "&aВы открыли Ангельский сундук игрока %d."
+#message-unlocked-one-angelchest: "&aВы открыли свой Ангельский сундук."
+#message-you-dont-have-any-angelchests: "&eУ вас нет Ангельских сундуков."
+#message-you-got-part-of-your-inventory-back: "&eВы вернули часть своих вещей, но некоторые все еще находятся в Ангельском сундуке."
+#message-you-got-your-inventory-back: "&aВаши вещи вернулись!"
+#message-angelchest-location: "&eРасположения ваших Ангельских сундуков:"
+#message-not-enough-money: "&cНе хватает денег."
+#message-not-enough-money2: "&cАнгел пытался собрать ваши вещи, но у вас не хватило денег."
+#message-please-select-chest: "&7Пожалуйста, укажите, какой Ангельский сундук желаете выбрать."
+#message-already-unlocked: "&cЭтот &aАнгельский сундук &cуже разблокирован."
+#message-too-many-angelchests: "&cУ тебя было слишком много сундуков Ангела, он не смог их удержать... Твой самый старый сундук ангела взорвался."
+#message-no-angelchest-in-pvp: "&cАнгел пытался собрать ваши вещи, но был обращен в бегство из-за вашего убийцы.."
+#message-angelchest-retrieved: "&aАнгельский сундук извлечён!"
+#message-confirm: "&6Вы собираетесь потратить {price}{currency}. Нажмите на сообщение для продолжения."
+#message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
+#message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
+#message-angelchest-opened: "&6{player} has opened your AngelChest."
+#message-angelchest-emptied: "&c{player} has emptied your AngelChest."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### Spanish
+#message-all-your-angelchests-were-already-unlocked: "&eTodos tus AngelChest ya se encuentran desbloqueados."
+#message-angelchest-created: "&aUn Angel ha colectado tus objetos y los ha puesto en un cofre en el lugar de tu muerte."
+#message-angelchest-disappeared: "&cHas sido muy lento... Tu AngelChest ha desaparecido y ha dropeado los objetos"
+#message-error-players-only: "&cError: Este comando solo puede ser ejecutado por jugadores."
+#message-inventory-was-empty: "&eUn Angel ha buscado tus objetos pero no pudo encontrar nada."
+#message-not-allowed-to-break-other-angelchests: "&cNo tienes permitido romper los AngelChest de otros jugadores."
+#message-not-allowed-to-open-other-angelchests: "&cNo tienes permitido abrir los AngelChest de otros jugadores."
+#message-unlocked-more-angelchests: "&aHas desbloqueado %d AngelChests."
+#message-unlocked-one-angelchest: "&aHas desbloqueado un AngelChest."
+#message-you-dont-have-any-angelchests: "&eNo posees ningun AngelChest."
+#message-you-got-part-of-your-inventory-back: "&eHas obtenido una parte de tu inventario de vuelta, pero algunos objetos siguen en tu AngelChest."
+#message-you-got-your-inventory-back: "&aHas obtenido tu inventario de vuelta!"
+#message-angelchest-location: "&eLugares de tus AngelChests:"
+#message-not-enough-money: "&cNo tienes dinero suficiente."
+#message-not-enough-money2: "&cUn Angel intentó recoger tus cosas pero no tenías suficiente dinero."
+#message-please-select-chest: "&7Especifica cuál AngelChest quisieras seleccionar."
+#message-already-unlocked: "&cEste AngelChest ya se encuentra desbloqueado."
+#message-too-many-angelchests: "&cTenías más AngelChests de los que tu Angel podía manejar ... Tu AngelChest más viejo ha explotado."
+#message-no-angelchest-in-pvp: "&cUn Angel intentó recoger tus cosas, pero la presencia de tu asesino lo puso en fuga.."
+#message-angelchest-retrieved: "&aAngelChest recuperado!"
+#message-confirm: "&6Está a punto de gastar {price}{currency}. Haga clic en este mensaje para continuar."
+#message-paid-open: "&8Gastaste {price}{currency} para abrir un AngelChest."
+#message-unlocked-automatically: "&8Tu AngelChest se ha desbloqueado automáticamente."
+#message-angelchest-opened: "&6{player} ha abierto tu AngelChest."
+#message-angelchest-emptied: "&c{player} ha vaciado tu AngelChest."
+#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
+
+##### Turkish
+#message-all-your-angelchests-were-already-unlocked: "&eTüm AngelChest'lerinin kilidi zaten açık."
+#message-angelchest-created: "&aBir melek eşyalarını topladı ve öldüğün konumda ki bir sandığa koydu."
+#message-angelchest-disappeared: "&cÇok yavaştın... AngelChest'in yok oldu ve içindekileri yere bıraktı."
+#message-error-players-only: "&cHata: Bu komut sadece oyuncular tarafından kullanılabilir."
+#message-inventory-was-empty: "&eBir melek eşyalarını aradı fakat hiçbir şey bulamadı."
+#message-not-allowed-to-break-other-angelchests: "&cDiğer oyuncuların AngelChest'ini kırmak için yetkin yok."
+#message-not-allowed-to-open-other-angelchests: "&cDiğer oyuncuların AngelChest'ini açmak için yetkin yok"
+#message-unlocked-more-angelchests: "&a %d AngelChests'lerinin kilidini açtın."
+#message-unlocked-one-angelchest: "&aKendi AngelChest'inin kilidini açtın."
+#message-you-dont-have-any-angelchests: "&eHiç AngelChest'e sahip değilsin."
+#message-you-got-part-of-your-inventory-back: "&eEnvanterinin bir parçasını elde ettin, Ama bazı eşyaların hala AngelChest'de."
+#message-you-got-your-inventory-back: "&aEnvanterini geri aldın!"
+#message-angelchest-location: "&eAngelChest'lerinin konumu:"
+#message-not-enough-money: "&cYeterli paraya sahip değilsin."
+#message-not-enough-money2: "&cBir melek eşyalarını toplamayı denedi ancak yeterli paran yoktu."
+#message-already-unlocked: "&cBu AngelChest'in kilidi zaten açık."
+#message-too-many-angelchests: "&cSahip olabileceğinden daha fazla AngelChest'in var... En eski AngelChest'in yok edildi."
+#message-no-angelchest-in-pvp: "&cBir melek eşyalarını toplamayı denedi fakat katiliniz tarafından engellendi."
+#message-angelchest-retrieved: "&aAngelChest yanınıza çağrıldı!"
+#message-confirm: "&6{price}{currency} harcamak üzeresin. Devam etmek için mesaja tıkla."
+#message-paid-open: "&8Bir AngelChest açmak için {price}{currency} harcadın."
+#message-unlocked-automatically: "&8AngelChest'inin kilidi otomatik olarak açıldı"
+#message-angelchest-opened: "&6{player} adlı oyuncu senin AngelChest'ini açtı."
+#message-angelchest-emptied: "&c{player} adlı oyuncu senin AngelChest'ini boşalttı."
+#message-spawn-chance-unsuccessful: "&cMelek eşyalarını toplamayı unuttu, şanssızlık!"
+
+#########################
+#####     Done!     #####
+#########################
+
+# Debug mode - you probably do not want this.
+debug: false
+verbose: false
+
+# NEVER CHANGE THE VALUES BELOW!
+plugin-version: 3.3.0
+config-version: 202103271334

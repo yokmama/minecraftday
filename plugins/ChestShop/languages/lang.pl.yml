@@ -1,0 +1,88 @@
+prefix: '&a[Sklep] &r'
+shopinfo: |-
+  &aInformacje o sklepie:
+  &fW��a��ciciel: &7%owner
+  &fIlo����: &7%stock
+  &fPrzedmiot: &7%item
+shopinfo_buy: '&fKup &7%amount &fza &7%price'
+shopinfo_sell: '&fSprzedaj &7%amount &fza &7%price'
+iteminfo: '��aInfo. o przedmiocie: ��r'
+iteminfo_fullname: '&fPe��na Nazwa: &7%item'
+iteminfo_shopname: '&fNazwa Sklepu: &7%item'
+iteminfo_repaircost: '&fKoszt Naprawy: &7%cost'
+iteminfo_book: |-
+  &fTytu�� ksi����ki: &7%title
+  &fAutor ksi����ki: &7%author
+  &fStrony ksi����ki: &7%pages
+iteminfo_book_generation: '&fGenerowanie Ksi����ki: &7%generation'
+iteminfo_lore: |-
+  &fOpis:
+  &r%lore
+METRICS: |-
+  &a[Sklep] &fStatystyki:
+  &fLiczba Kont: &7%accounts
+  &f��rednie transakcje: &7%totalTransactions &f(Kup: &7%buyTransactions &fSprzedaj: &7%sellTransactions&f)
+  &f��rednie wymienione przedmioty: &7%totalItems &f(Kupione: &7%boughtItems &fSprzedane: &7%soldItems&f)
+ACCESS_DENIED: Nie masz uprawnie�� do przegl��dania zawarto��ci tego sklepu!
+TRADE_DENIED: Nie masz pozwolenia, aby handlowa�� w tym sklepie!
+TRADE_DENIED_ACCESS_PERMS: Nie mo��esz handlowa�� w sklepach, do kt��rych masz dost��p!
+TRADE_DENIED_CREATIVE_MODE: Nie mo��esz handlowa�� w sklepach w trybie kreatywnym!
+NOT_ENOUGH_MONEY: Nie sta�� ci��!
+NOT_ENOUGH_MONEY_SHOP: W��a��ciciel sklepu nie ma wystarczaj��co pieni��dzy!
+CLIENT_DEPOSIT_FAILED: Wp��ata pieni��dzy na twoje konto nie powiod��a si��!
+SHOP_DEPOSIT_FAILED: Wplata pieni��dzy na konto w��a��ciciela sklepu nie powiod��a
+  si��!
+NO_ECONOMY_ACCOUNT: Konto ekonomiczne od w��a��ciciela sklepu nie istnieje!
+NO_BUYING_HERE: Nie mo��esz tutaj kupowa��!
+NO_SELLING_HERE: Nie mo��esz tutaj sprzedawa��!
+NOT_ENOUGH_SPACE_IN_INVENTORY: Brak wolnego miejsca w ekwipunku!
+NOT_ENOUGH_SPACE_IN_CHEST: Brak wolnego miejsca w skrzyni!
+NOT_ENOUGH_ITEMS_TO_SELL: Masz za ma��o przedmiot��w, aby je sprzeda��!
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [Sklep z %item&7 w cenie %price jest pe��ny!](&f%seller&7 pr��bowa�� sprzeda��
+  &7W ��wiecie: &f%world
+  &7Na pozycji: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: Ten sklep jest pusty.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [Sklep z %item&7 w cenie %price jest pusty!](&f%buyer&7 pr��bowa�� kupi��
+  &7W ��wiecie: &f%world
+  &7Na pozycji: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: Kupi��e�� %item od %owner za %price.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer kupi�� %item za %price.](&7W ��wiecie: &f%world
+  &7Na pozycji: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: Sprzeda��e�� %item graczowi %buyer za %price.
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller sprzeda�� %item za %price.](&7W ��wiecie: &f%world
+  &7Na pozycji: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: Nie mo��esz stworzy�� sklepu tego typu!
+NO_CHEST_DETECTED: Nie znaleziono skrzyni!
+INVALID_SHOP_DETECTED: Sklep nie mo��e by�� u��ywany (by�� mo��e brakuje skrzyni)!
+INVALID_SHOP_PRICE: Z��a cena!
+INVALID_SHOP_QUANTITY: Sklep ma podana niewlasciwa ilosc produktu!
+CANNOT_ACCESS_THE_CHEST: Nie masz uprawnie�� dost��pu do tej skrzyni!
+SELL_PRICE_ABOVE_MAX: Cena sprzeda��y jest wy��sza ni�� maksymalna!
+SELL_PRICE_BELOW_MIN: Cena sprzeda��y jest poni��ej minimum!
+BUY_PRICE_ABOVE_MAX: Cena zakupu jest wy��sza ni�� maksymalna!
+BUY_PRICE_BELOW_MIN: Cena zakupu jest poni��ej minimum!
+CLICK_TO_AUTOFILL_ITEM: Kliknij znak z przedmiotem, dla kt��rego przeznaczony jest
+  ten sklep!
+NO_ITEM_IN_HAND: Nie masz w r��ku przedmiotu do automatycznego wype��nienia!
+PROTECTED_SHOP: Sklep zosta�� zabezpieczony przez LWC!
+PROTECTED_SHOP_SIGN: Pomy��lnie zabezpieczono znak sklepu z LWC!
+SHOP_CREATED: Sklep zosta�� pomy��lnie utworzony!
+SHOP_FEE_PAID: 'Zosta��e�� obci����ony kosztami: " %amount'
+SHOP_REFUNDED: 'Zwr��cono ci: " %amount.'
+ITEM_GIVEN: Dano %item graczowi %player.
+RESTRICTED_SIGN_CREATED: Znak zosta�� pomy��lnie utworzony!
+PLAYER_NOT_FOUND: Nie znaleziono gracza!
+NO_PERMISSION: Nie masz do tego uprawnie��!
+INCORRECT_ITEM_ID: Poda��e�� niepoprawne ID przedmiotu!
+INVALID_CLIENT_NAME: Twoja nick nie jest poprawn�� nazw�� u��ytkownika Minecraft!
+NOT_ENOUGH_PROTECTIONS: Nie mo��na stworzy�� zabezpieczenia!
+NO_SHOP_FOUND: Nie znaleziono sklepu.
+CANNOT_CREATE_SHOP_HERE: Nie mo��esz stworzy�� tutaj sklepu!
+TOGGLE_MESSAGES_OFF: Nie b��dziesz ju�� otrzymywa�� wiadomo��ci ze swoich sklep��w.
+TOGGLE_MESSAGES_ON: Od teraz b��dziesz otrzymywa�� wiadomo��ci ze swoich sklep��w.
+TOGGLE_ACCESS_ON: Nie mo��esz ju�� handlowa�� w sklepach, do kt��rych masz dost��p
+TOGGLE_ACCESS_OFF: Mo��esz teraz handlowa�� w sklepach, do kt��rych masz dost��p

@@ -1,0 +1,29 @@
+#
+# Language-File created by:		Rinne_owo
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a 插件启动成功."
+  plugin-update: "[P]&a 这个插件有一个新版本:&6 %NewVersion%&a!\n[P]&a 您正在运行在:&6 %Version%&a!\n [P]&a下载新版本：&6%Path%"
+  plugin-stop: "[P]&a 插件成功禁用."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a 设置成功重置."
+  command-permission-error: "[P]&c 你不被允许执行此命令!"
+  command-consol-error: "[P]&c 这个插件是给玩家使用的!"
+  command-gsit-waterlogged-error: "[P]&c 你不能坐在水上!"
+  command-gsit-blocked-error: "[P]&c 你不能坐在这里!"
+  command-gsit-already-sit-error: "[P]&c 你现在已经在坐着了!"
+  command-gsit-in-block-error: "[P]&c 你不能坐在方块里面!"
+  command-gsit-world-error: "[P]&c 你不能在这个世界坐下!"
+  command-gsit-on-ground-error: "[P]&c 你不能在这里坐下!"
+  command-gsit-toggle-off: "[P]&a 您现在可以通过重新再次坐下."
+  command-gsit-toggle-on: "[P]&a 您不能再通过对准来坐下."
+  command-gsit-stand-up: "&a用潜行钥匙站起来."

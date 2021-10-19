@@ -1,0 +1,36 @@
+#
+# Language-File created by:		Hunderon & ddddddnikita
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a Плагин был успешно запущен."
+  plugin-link: "[P]&a Ссылка с&6 %Link%&a успешная!"
+  plugin-update: "[P]&6 Вышло обновление для этого плагина:&6 %NewVersion%&a!\n[P]&a Вы используете устаревшую версию:&6 %Version%&a!\n[P]&a Загрузите последнюю версию:\n[P]&6 %Path%"
+  plugin-stop: "[P]&a Плагин был успешно выключен."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a Настройки были успешно перезагружены."
+  command-permission-error: "[P]&c У вас нет прав на использование этой команды!"
+  command-consol-error: "[P]&c Эта команда только для игроков!"
+  command-gsit-waterlogged-error: "[P]&c Вы не можете сидеть на затопленных блоках!"
+  command-gsit-blocked-error: "[P]&c Вы не можете сидеть здесь!"
+  command-gsit-already-sit-error: "[P]&c Вы уже сидите!"
+  command-gsit-in-block-error: "[P]&c Вы не можете сидеть в блоке!"
+  command-gsit-world-error: "[P]&c Вы не можете сидеть в этом мире!"
+  command-gsit-on-ground-error: "[P]&c Вы не можете сидеть здесь!"
+  command-gsit-sit: "&aИспользуйте клавишу Красться чтобы встать"
+  command-glay-blocked-error: "[P]&c Вы не можете здесь лежать!"
+  command-glay-already-lay-error: "[P]&c Ты уже лежишь!"
+  command-glay-world-error: "[P]&c Вы не можете лечь в этом мире!"
+  command-glay-on-ground-error: "[P]&c Здесь нельзя лежать!"
+  command-glay-lay: "&aИспользуйте клавишу Красться чтобы встать"
+  command-blocked-error: "[P]&c Вам не разрешено выполнять эту команду прямо сейчас!"
+  command-gsittoggle-off: "[P]&a Теперь вы можете сесть, кликнув на блок."
+  command-gsittoggle-on: "[P]&a Теперь вы больше не можете сесть, кликнув на блок."

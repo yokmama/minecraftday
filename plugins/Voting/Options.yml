@@ -1,0 +1,55 @@
+Options:
+  Command:
+    Voting:
+      Aliases:
+      - vot
+    VotingAdmin:
+      Aliases:
+      - votadmin
+  Economy:
+    Active: false
+    Type: NONE
+  Round:
+    Duration: 60
+    Pause:
+      Global:
+        Active: true
+        Duration: 10
+      Personal:
+        Active: true
+        Duration: 300
+    MinPlayers: 2
+    TimeChangeAnimation:
+      Active: true
+      Speed: 100
+  Visual:
+    DateFormat: dd.MM.yyyy HH:mm
+    Chat:
+      MessageJoiningChar: ' '
+    BossBar:
+      Active: true
+      Color: BLUE
+      Style: SEGMENTED_20
+    ActionBar:
+      Active: true
+      Progress:
+        Char: ●
+        Count: 10
+        Color:
+          Positive: '&a'
+          Negative: '&c'
+    Info:
+      Join:
+        Active: true
+      Interval:
+      - '60:55'
+      - '45:40'
+      - '30:25'
+      - '10:1'
+  GUI:
+    Base:
+      VotingUnitGUI:
+        LineCount: 1
+      VotingVoteGUI:
+        LineCount: 1
+VERSION: 3.1.0

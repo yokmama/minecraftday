@@ -1,0 +1,92 @@
+prefix: '&a[Shop] &r'
+shopinfo: |-
+  &aInformations du shop:
+  &fPropri��taire: &7%owner
+  &fStock: &7%stock
+  &fItem: &7%item
+shopinfo_buy: '&fAch��te &7%amount &fpour &7%price'
+shopinfo_sell: '&fVend &7%amount &fpour &7%price'
+iteminfo: '&aInformation sur l''Objet: &f'
+iteminfo_fullname: '&fNom Complet: &7%item'
+iteminfo_shopname: '&fPanneau du Magasin: &7%item'
+iteminfo_repaircost: '&fCo��t de la r��paration: &7%cost'
+iteminfo_book: |-
+  &fTitre du livre: &7%title
+  &fAuteur du livre : &7%author
+  &fNombre de pages: &7%pages
+iteminfo_book_generation: '&fG��n��ration du livre: &7%generation'
+iteminfo_lore: |-
+  &fLore:
+  &r%lore
+METRICS: |-
+  &a[Shop] &fMetrics :
+  &fComptes : &7%account
+  &fTransactions moyennes : &7%totalTransactions &f(achetez : &7%buyTransactions &fsell: &7%sellTransactions&f)
+  &fArticles moyens ��chang��s : &7%totalItems &f(achet��s : &7%boughtItems &fsold: &7%soldItems&f)
+ACCESS_DENIED: Vous n'��tes pas autoris�� �� acc��der au conteneur de stockage de
+  ce magasin !
+TRADE_DENIED: Vous n'avez pas la permission d'utiliser ceci!
+TRADE_DENIED_ACCESS_PERMS: Vous ne pouvez pas commercer avec des boutiques auxquelles
+  vous avez acc��s !
+TRADE_DENIED_CREATIVE_MODE: '&cVous ne pouvez pas utiliser une boutique en mode cr��atif!'
+NOT_ENOUGH_MONEY: Vous n'avez pas assez de monnaie !
+NOT_ENOUGH_MONEY_SHOP: Le vendeur n'a pas assez de monnaie !
+CLIENT_DEPOSIT_FAILED: Le d��p��t d'argent sur votre compte a echou��!
+SHOP_DEPOSIT_FAILED: Le d��p��t d'argent sur le compte du propri��taire a echou��.
+NO_ECONOMY_ACCOUNT: Le compte ��conomique du propri��taire du magasin n'existe pas!
+NO_BUYING_HERE: Vous ne pouvez pas acheter ici !
+NO_SELLING_HERE: Vous ne pouvez pas vendre ici !
+NOT_ENOUGH_SPACE_IN_INVENTORY: Vous n'avez plus de place dans votre inventaire !
+NOT_ENOUGH_SPACE_IN_CHEST: Il n'y a pas assez d'espaces dans le coffre !
+NOT_ENOUGH_ITEMS_TO_SELL: Vous n'avez pas assez d'objet �� vendre
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [La boutique%price %item&7 est pleine!](&f%seller&7 a essay�� de vendre
+  &7Dans le monde : &f%world
+  &7�� la position: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: Ce Magasin est vide.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [La boutique%price %item&7 est en rupture!](&f%buyer&7 a essay�� d'acheter
+  &7Dans le monde : &f%world
+  &7�� la position: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: Vous avez achet�� %amount %item a %owner pour %price.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer a achet�� %item pour %price.](&7Dans le monde: &f%world
+  &7Aux coordonn��es: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: Vous avez vendu %amount %item �� %buyer pour %price.
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller a vendu %item pour %price.](&7Dans le monde: &f%world
+  &7Aux coordonn��es: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: Vous ne pouvez pas cr��er ce type de Magasin !
+NO_CHEST_DETECTED: Impossible de trouver le coffre !
+INVALID_SHOP_DETECTED: Ce magasin ne peut pas ��tre utilis��.
+INVALID_SHOP_PRICE: Ce magasin comporte un prix invalide!
+INVALID_SHOP_QUANTITY: Ce magasin propose une quantit�� invalide
+CANNOT_ACCESS_THE_CHEST: Vous n'avez pas la permission d'acc��der a ce coffre !
+SELL_PRICE_ABOVE_MAX: Le prix de vente est au-dessus du maximum autoris��!
+SELL_PRICE_BELOW_MIN: Le prix de vente est en dessous du minimum!
+BUY_PRICE_ABOVE_MAX: Le prix d'achat d��passe la limite maximale !
+BUY_PRICE_BELOW_MIN: Le prix d'achat est inf��rieur �� la limite minimale !
+CLICK_TO_AUTOFILL_ITEM: Cliquez sur le panneau du magasin avec l'objet que vous souhaitez
+  vendre !
+NO_ITEM_IN_HAND: Aucun objet en main pour l'auto-compl��tion!
+PROTECTED_SHOP: Le Magasin est prot��g�� par LWC !
+PROTECTED_SHOP_SIGN: Vous avez prot��g�� avec succ��s votre magasin avec LWC!
+SHOP_CREATED: Le Magasin est cr���� !
+SHOP_FEE_PAID: Vous avez pay�� %amount
+SHOP_REFUNDED: Vous avez ��t�� rembours�� de %amount
+ITEM_GIVEN: '%item a ��t�� donn�� �� %player'
+RESTRICTED_SIGN_CREATED: La cr��ation de panneau a r��ussi!
+PLAYER_NOT_FOUND: Le joueur n'a pas pu ��tre trouv�� !
+NO_PERMISSION: Vous n'avez pas la permission pour faire cela!
+INCORRECT_ITEM_ID: Vous avez sp��cifi�� une ID invalide !
+INVALID_CLIENT_NAME: Votre nom d'utilisateur n'est pas un nom d'utilisateur Minecraft
+  valide !
+NOT_ENOUGH_PROTECTIONS: Impossible de cr��er une protection !
+NO_SHOP_FOUND: Aucun magasin trouv��.
+CANNOT_CREATE_SHOP_HERE: Vous ne pouvez pas cr��er de magasin ici !
+TOGGLE_MESSAGES_OFF: Vous ne recevrez plus de messages en provenance de vos magasins.
+TOGGLE_MESSAGES_ON: Vous pouvez maintenant recevoir des messages en provenance de
+  vos magasins.
+TOGGLE_ACCESS_ON: Vous ne pouvez pas commercer avec des boutiques auxquelles vous
+  avez acc��s
+TOGGLE_ACCESS_OFF: Vous pouvez commercer avec des boutiques auxquelles vous avez acc��s

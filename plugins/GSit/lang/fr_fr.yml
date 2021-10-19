@@ -1,0 +1,29 @@
+#
+# Language-File created by:		Gecolay
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a Le plugin a été chargé avec succès."
+  plugin-update: "[P]&a Ce plugin a une nouvelle version:&6 %NewVersion%&a!\n[P]&a Vous utilisez la version obsolète:&6 %Version%&a!\n[P]&a Téléchargez la dernière version:&6 %Path%"
+  plugin-stop: "[P]&a Le plugin a été désactivé avec succès."
+  plugin-prefix: "&7[&6GSit&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a Les paramètres ont été rechargés avec succès."
+  command-permission-error: "[P]&c Vous n'êtes pas autorisé à exécuter cette commande!"
+  command-consol-error: "[P]&c Cette commande est réservée aux joueurs!"
+  command-gsit-waterlogged-error: "[P]&c Vous ne pouvez pas vous asseoir dans des blocs gorgés d'eau!"
+  command-gsit-blocked-error: "[P]&c Vous ne pouvez pas vous asseoir ici!"
+  command-gsit-already-sit-error: "[P]&c Tu es déjà assis!"
+  command-gsit-in-block-error: "[P]&c Vous ne pouvez pas vous asseoir dans un bloc!"
+  command-gsit-world-error: "[P]&c Vous ne pouvez pas vous asseoir dans ce monde!"
+  command-gsit-on-ground-error: "[P]&c Vous ne pouvez pas vous asseoir ici!"
+  command-gsit-toggle-off: "[P]&a Vous pouvez maintenant vous asseoir à nouveau en cliquant sur."
+  command-gsit-toggle-on: "[P]&a Vous ne pouvez plus vous asseoir en cliquant."
+  command-gsit-stand-up: "&aUtilisez votre Sneak-Key pour vous lever."
