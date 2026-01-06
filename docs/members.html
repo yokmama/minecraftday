@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="マインクラフトデイ協会 会員専用ページ">
+  <title>会員専用ページ | マインクラフトデイ協会</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">M</div>
+        <span class="logo-text">マインクラフトデイ協会</span>
+      </a>
+      <button class="nav-toggle" aria-label="メニュー" onclick="toggleNav()">☰</button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">ホーム</a>
+        <a href="about.html" class="nav-link">協会について</a>
+        <a href="activities.html" class="nav-link">活動内容</a>
+        <a href="guidelines.html" class="nav-link">ガイドライン</a>
+        <a href="membership.html" class="nav-link">入会案内</a>
+        <a href="services.html" class="nav-link">会員サービス</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>会員専用ページ</h1>
+      <p>ログインしてイベント登録などの会員機能をご利用ください</p>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">ホーム</a> &gt; <span>会員専用ページ</span>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <section class="section">
+    <div class="container content">
+
+      <!-- ログイン前の表示 -->
+      <div id="login-section">
+        <div class="text-center" style="padding: 3rem;">
+          <h2>ログインが必要です</h2>
+          <p>会員専用機能を利用するには、Googleアカウントでログインしてください。</p>
+          <p style="font-size: 0.875rem; color: #666; margin-bottom: 2rem;">
+            ※ 入会申込時に登録したGoogleアカウントでログインしてください
+          </p>
+          <button onclick="signInWithGoogle()" class="btn btn-primary" style="font-size: 1rem;">
+            Googleでログイン
+          </button>
+        </div>
+
+        <div class="alert alert-info mt-4">
+          <strong>まだ会員でない方へ</strong><br>
+          <a href="membership.html">入会案内ページ</a>から入会申込ができます。
+        </div>
+      </div>
+
+      <!-- ログイン後の表示 -->
+      <div id="member-section" style="display: none;">
+        <div class="alert alert-success">
+          <strong>ログイン中:</strong> <span id="user-info"></span>
+          <button onclick="signOut()" style="margin-left: 1rem; padding: 0.25rem 0.5rem; font-size: 0.875rem;">ログアウト</button>
+        </div>
+
+        <h2>会員メニュー</h2>
+
+        <div class="card-grid mt-3">
+          <div class="card">
+            <h3>イベントを登録</h3>
+            <p>マイクラデイを開催する場合は、こちらからイベント情報を登録してください。カレンダーに自動で反映されます。</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf11Hpz_6qrP9pVQR-r_tmYuGFIa3-8HDPnIPLZkycIPL0i4g/viewform" class="btn btn-primary mt-2" target="_blank">イベント登録フォーム</a>
+          </div>
+          <div class="card">
+            <h3>イベントカレンダー</h3>
+            <p>登録されているイベントの一覧を確認できます。</p>
+            <a href="events.html" class="btn btn-secondary mt-2">カレンダーを見る</a>
+          </div>
+          <div class="card">
+            <h3>ガイドライン</h3>
+            <p>イベント運営のガイドラインを確認できます。</p>
+            <a href="guidelines.html" class="btn btn-secondary mt-2">ガイドラインを見る</a>
+          </div>
+        </div>
+
+        <h2 class="mt-4">会員向けサービス</h2>
+        <ul class="feature-list">
+          <li>サーバーソフトウェアの提供</li>
+          <li>施設の紹介・貸出</li>
+          <li>機材の貸出</li>
+          <li>運営相談</li>
+        </ul>
+        <p>
+          サービスの利用については<a href="contact.html">お問い合わせ</a>ください。
+        </p>
+
+        <div class="alert alert-warning mt-4">
+          <strong>ご注意</strong><br>
+          イベント登録は、入会申込が承認された会員のみ可能です。<br>
+          承認前にフォームを送信してもカレンダーには登録されません。
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>マインクラフトデイ協会</h4>
+          <p>子供たちに安全で楽しいマインクラフト体験を提供するコミュニティです。</p>
+        </div>
+        <div>
+          <h4>リンク</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">協会について</a></li>
+            <li><a href="activities.html">活動内容</a></li>
+            <li><a href="guidelines.html">ガイドライン</a></li>
+            <li><a href="membership.html">入会案内</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>会員向け</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">会員サービス</a></li>
+            <li><a href="events.html">イベント情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>その他</h4>
+          <ul class="footer-links">
+            <li><a href="legal.html">著作権・免責事項</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 マインクラフトデイ協会. All rights reserved.</p>
+        <p class="footer-disclaimer">
+          当協会はMojang Studios、Microsoft Corporationとは一切関係がありません。<br>
+          「Minecraft」はMojang Studiosの商標です。
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
