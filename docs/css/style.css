@@ -182,7 +182,8 @@ p {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--mc-sky) 0%, #B0E0E6 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url('../images/hero-bg.jpg') center center / cover no-repeat;
   padding: 4rem 0;
   text-align: center;
   position: relative;
@@ -207,16 +208,39 @@ p {
 
 .hero h1 {
   font-size: 3rem;
-  color: var(--mc-dark-green);
+  color: var(--mc-white);
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--mc-text);
+  color: var(--mc-white);
   max-width: 600px;
   margin: 0 auto 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero .btn-primary {
+  background: var(--mc-white);
+  color: var(--mc-dark-green);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--mc-dark-green);
+}
+
+.hero .btn-outline {
+  background: transparent;
+  color: var(--mc-white);
+  border: 2px solid var(--mc-white);
+}
+
+.hero .btn-outline:hover {
+  background: var(--mc-white);
+  color: var(--mc-dark-green);
 }
 
 /* Buttons */
