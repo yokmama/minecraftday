@@ -101,12 +101,16 @@ p {
 .logo-icon {
   width: 48px;
   height: 48px;
-  background: var(--mc-brown);
-  border: 3px solid var(--mc-dark-brown);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .logo-text {

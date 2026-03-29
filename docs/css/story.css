@@ -1,0 +1,164 @@
+/* ===================================
+   Blog / Story Styles
+   Lightweight blog styles for minecraftday.jp
+   =================================== */
+
+/* ---- Blog Article Body ---- */
+.blog-body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.blog-meta {
+  font-size: 0.875rem;
+  color: var(--mc-stone);
+  margin-bottom: 2rem;
+}
+
+.blog-body > h1 {
+  font-size: 1.75rem;
+  color: var(--mc-dark-green);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.blog-body p {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--mc-text);
+  margin-bottom: 1.5rem;
+}
+
+.blog-body h2 {
+  font-size: 1.35rem;
+  color: var(--mc-dark-green);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--mc-green);
+}
+
+.blog-body h3 {
+  font-size: 1.15rem;
+  color: var(--mc-green);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ---- Blockquote ---- */
+.blog-body blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem 1rem 1.5rem;
+  background: #f0f7ec;
+  border-left: 4px solid var(--mc-green);
+  border-radius: 0 6px 6px 0;
+}
+
+.blog-body blockquote p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.blog-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-body blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--mc-stone);
+  font-style: normal;
+}
+
+/* ---- Inline Image ---- */
+.blog-body figure {
+  margin: 2rem 0;
+}
+
+.blog-body figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.blog-body figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.825rem;
+  color: var(--mc-stone);
+  text-align: center;
+}
+
+/* ---- Back link ---- */
+.blog-back {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.9rem;
+}
+
+.blog-back a {
+  color: var(--mc-green);
+}
+
+/* ---- Blog List (index) ---- */
+.blog-list {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-list li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.blog-list li:first-child {
+  padding-top: 0;
+}
+
+.blog-list-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--mc-dark-green);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.blog-list-title:hover {
+  color: var(--mc-green);
+}
+
+.blog-list-date {
+  font-size: 0.825rem;
+  color: var(--mc-stone);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.blog-list-summary {
+  font-size: 0.925rem;
+  color: var(--mc-text);
+  line-height: 1.7;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .blog-body {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .blog-body > h1 {
+    font-size: 1.4rem;
+  }
+
+  .blog-body h2 {
+    font-size: 1.2rem;
+  }
+
+  .blog-body blockquote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
